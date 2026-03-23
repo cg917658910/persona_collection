@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router'
+import { createBrowserRouter, createHashRouter } from 'react-router'
 import { Layout } from './components/Layout'
 import { Home } from './pages/Home'
 import { Search } from './pages/Search'
@@ -12,7 +12,7 @@ import { CreatorDetail } from './pages/CreatorDetail'
 import { Themes } from './pages/Themes'
 import { ThemeDetail } from './pages/ThemeDetail'
 
-export const router = createBrowserRouter([
+const routes = [
   {
     path: '/',
     Component: Layout,
@@ -30,4 +30,10 @@ export const router = createBrowserRouter([
       { path: 'character/:slug', Component: CharacterDetail },
     ],
   },
-])
+]
+
+const shouldUseHashRouter =
+  typeof window !== 'undefined' &&
+  (window.location.protocol === 'file:' || /\/index\.html$/i.test(window.location.pathname))
+
+export const router = shouldUseHashRouter ? createHashRouter(routes) : createBrowserRouter(routes)

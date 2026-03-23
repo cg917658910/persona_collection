@@ -1,8 +1,8 @@
+import { Search } from 'lucide-react'
 import { motion } from 'motion/react'
 import { useMemo, useState } from 'react'
-import { Search } from 'lucide-react'
-import { creatorCards } from '../data/adapters'
 import { CreatorCard } from '../components/CreatorCard'
+import { creatorCards } from '../data/adapters'
 
 export function Creators() {
   const [query, setQuery] = useState('')
