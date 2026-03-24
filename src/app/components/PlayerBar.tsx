@@ -154,7 +154,18 @@ export function PlayerBar() {
         </AnimatePresence>
 
         <motion.div layout className="pointer-events-auto overflow-hidden rounded-2xl border border-white/10 bg-[#151920]/92 shadow-2xl backdrop-blur-md">
-          <button onClick={expand} className="block w-full text-left">
+          <div
+            role="button"
+            tabIndex={0}
+            onClick={expand}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault()
+                expand()
+              }
+            }}
+            className="block w-full text-left"
+          >
             <div className="flex items-center gap-3 px-3 py-3">
               {currentTrack.coverUrl ? <img src={currentTrack.coverUrl} alt={currentTrack.title} className="h-10 w-10 rounded-xl object-cover" /> : <div className="h-10 w-10 rounded-xl bg-white/5" />}
               <div className="min-w-0 flex-1">
@@ -188,7 +199,7 @@ export function PlayerBar() {
             <div className="h-[2px] w-full bg-white/5">
               <div className="h-full bg-[#D6B36A] transition-all" style={{ width: `${Math.max(progress * 100, 0)}%` }} />
             </div>
-          </button>
+          </div>
         </motion.div>
       </div>
     </div>

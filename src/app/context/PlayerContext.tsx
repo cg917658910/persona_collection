@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
+import { getCharacterBySlug } from '../data/adapters'
 import { songs } from '../data/songs'
 
 type Track = {
@@ -39,13 +40,14 @@ const PlayerContext = createContext<PlayerContextValue | null>(null)
 
 const defaultQueue: Track[] = songs.map((song) => ({
   title: song.title,
-  subtitle: song.characterSlug,
+  subtitle: getCharacterBySlug(song.characterSlug)?.name ?? song.characterSlug,
   coverUrl: song.coverUrl,
   audioUrl: song.audioUrl,
 }))
 
 export function PlayerProvider({ children }: { children: React.ReactNode }) {
   const audioRef = useRef<HTMLAudioElement | null>(null)
+  const indexRef = useRef(-1)
   const [queue] = useState<Track[]>(defaultQueue)
   const [index, setIndex] = useState(-1)
   const [currentTrack, setCurrentTrack] = useState<Track | null>(null)
@@ -63,7 +65,7 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
     audioRef.current = audio
 
     const onEnded = () => {
-      void nextInternal()
+      void nextInternal(indexRef.current)
     }
     const onPause = () => setIsPlaying(false)
     const onPlay = () => {
@@ -109,6 +111,10 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
     }
   }, [])
 
+  useEffect(() => {
+    indexRef.current = index
+  }, [index])
+
   const setTrackSource = async (track: Track, nextIndex: number) => {
     const audio = audioRef.current
     if (!audio) return
@@ -116,6 +122,7 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
     setIsReady(false)
     setCurrentTime(0)
     setDuration(0)
+    indexRef.current = nextIndex
     setIndex(nextIndex)
     setCurrentTrack(track)
     setDisplayMode('mini')
@@ -130,16 +137,16 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
     }
   }
 
-  const nextInternal = async () => {
+  const nextInternal = async (baseIndex = indexRef.current) => {
     if (!queue.length) return
-    const nextIndex = index >= 0 ? (index + 1) % queue.length : 0
+    const nextIndex = baseIndex >= 0 ? (baseIndex + 1) % queue.length : 0
     const nextTrack = queue[nextIndex]
     await setTrackSource(nextTrack, nextIndex)
   }
 
-  const prevInternal = async () => {
+  const prevInternal = async (baseIndex = indexRef.current) => {
     if (!queue.length) return
-    const prevIndex = index > 0 ? index - 1 : queue.length - 1
+    const prevIndex = baseIndex > 0 ? baseIndex - 1 : queue.length - 1
     const prevTrack = queue[prevIndex]
     await setTrackSource(prevTrack, prevIndex)
   }

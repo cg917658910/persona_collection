@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef } from 'react'
 import { Outlet, useLocation, useNavigate } from 'react-router'
 import { Home, Search, Compass, User } from 'lucide-react'
 import { motion } from 'motion/react'
@@ -7,6 +8,7 @@ import { PlayerBar } from './PlayerBar'
 export function Layout() {
   const location = useLocation()
   const navigate = useNavigate()
+  const mainRef = useRef<HTMLElement | null>(null)
   const tabs = [
     { path: '/', icon: Home, label: '首页' },
     { path: '/search', icon: Search, label: '搜索' },
@@ -16,11 +18,15 @@ export function Layout() {
 
   const isActive = (path: string) => (path === '/' ? location.pathname === '/' : location.pathname.startsWith(path))
 
+  useLayoutEffect(() => {
+    mainRef.current?.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+  }, [location.key])
+
   return (
     <PlayerProvider>
       <div className="min-h-screen flex items-center justify-center" style={{ background: '#0F1115' }}>
         <div className="relative w-full max-w-[375px] h-screen flex flex-col" style={{ background: '#0F1115' }}>
-          <main className="flex-1 overflow-y-auto pb-36">
+          <main ref={mainRef} className="flex-1 overflow-y-auto pb-36">
             <Outlet />
           </main>
           <PlayerBar />

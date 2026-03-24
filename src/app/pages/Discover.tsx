@@ -1,38 +1,68 @@
+import { ArrowRight, Play, RefreshCcw, Sparkles } from 'lucide-react'
+import { AnimatePresence, motion } from 'motion/react'
 import { useMemo, useState } from 'react'
-import { motion, AnimatePresence } from 'motion/react'
-import { Sparkles, RefreshCcw, Play, ArrowRight } from 'lucide-react'
 import { useNavigate } from 'react-router'
-import { characterCards, discoverGroups, featuredSongs } from '../data/adapters'
 import { usePlayer } from '../context/PlayerContext'
+import { characterCards, discoverGroups, featuredSongs } from '../data/adapters'
 
-const discoverTexts = ['今天你会遇见谁？', '让命运替你翻开一个人的一页', '有些人物不是被搜索到的，而是被撞见的']
+const getPoolByGroupSlug = (slug: string | null) => {
+  if (!slug) return characterCards
+  const group = discoverGroups.find((item) => item.slug === slug)
+  if (!group?.slugs?.length) return characterCards
+  return characterCards.filter((item) => group.slugs.includes(item.slug))
+}
+
+const discoverTexts = [
+  '今天你会遇见谁？',
+  '让命运替你翻开一个人物的一页。',
+  '有些人物不是被搜索到的，而是被撞见的。',
+]
 
 export function Discover() {
   const navigate = useNavigate()
   const { playTrack } = usePlayer()
-  const [index, setIndex] = useState(0)
-  const [headlineIndex, setHeadlineIndex] = useState(0)
+
   const [groupSlug, setGroupSlug] = useState<string | null>(null)
+  const pool = useMemo(() => getPoolByGroupSlug(groupSlug), [groupSlug])
+  
+  const getRandomIndex = (length = pool.length, exclude?: number) => {
+    if (length <= 1) return 0
 
-  const pool = useMemo(() => {
-    if (!groupSlug) return characterCards
-    const group = discoverGroups.find((item) => item.slug === groupSlug)
-    if (!group?.slugs?.length) return characterCards
-    return characterCards.filter((item) => group.slugs.includes(item.slug))
-  }, [groupSlug])
+    let nextIndex = Math.floor(Math.random() * length)
+    while (nextIndex === exclude) {
+      nextIndex = Math.floor(Math.random() * length)
+    }
 
-  const current = pool[index % Math.max(pool.length, 1)] ?? characterCards[0]
-  const discovered = useMemo(() => pool.slice(0, Math.min(index + 1, pool.length)), [index, pool])
+    return nextIndex
+  }
+
+  const [index, setIndex] = useState(getRandomIndex())
+  const [headlineIndex, setHeadlineIndex] = useState(0)
+  const [history, setHistory] = useState<number[]>([0])
+
+  const current = pool[index] ?? characterCards[0]
+  const discovered = useMemo(
+    () =>
+      history
+        .map((itemIndex) => pool[itemIndex])
+        .filter((item): item is (typeof characterCards)[number] => Boolean(item)),
+    [history, pool],
+  )
   const currentSong = featuredSongs.find((item) => item.characterName === current.name)
 
   const handleRefresh = () => {
-    setIndex((prev) => (prev + 1) % Math.max(pool.length, 1))
+    const nextIndex = getRandomIndex(pool.length, index)
+    setIndex(nextIndex)
+    setHistory((prev) => [...prev, nextIndex])
     setHeadlineIndex((prev) => (prev + 1) % discoverTexts.length)
   }
 
   const resetGroup = (slug: string | null) => {
+    const nextPool = getPoolByGroupSlug(slug)
+    const nextIndex = getRandomIndex(nextPool.length)
     setGroupSlug(slug)
-    setIndex(0)
+    setIndex(nextIndex)
+    setHistory([nextIndex])
   }
 
   return (

@@ -10,7 +10,7 @@ export const creators: PMCreator[] = [
     regionCode: "china",
     culturalRegionCode: "chinese_literature",
     eraText: "清代",
-    coverUrl: "/assets/images/creators/cao-xueqin.svg",
+    coverUrl: "./assets/images/creators/cao-xueqin.svg",
     workSlugs: ["dream-of-the-red-chamber"],
   },
   {
@@ -22,7 +22,7 @@ export const creators: PMCreator[] = [
     regionCode: "china",
     culturalRegionCode: "chinese_literature",
     eraText: "明代",
-    coverUrl: "/assets/images/creators/wu-chengen.svg",
+    coverUrl: "./assets/images/creators/wu-chengen.svg",
     workSlugs: ["journey-to-the-west"],
   },
   {
@@ -34,7 +34,7 @@ export const creators: PMCreator[] = [
     regionCode: "uk",
     culturalRegionCode: "british_literature",
     eraText: "英国文艺复兴时期",
-    coverUrl: "/assets/images/creators/william-shakespeare.svg",
+    coverUrl: "./assets/images/creators/william-shakespeare.svg",
     workSlugs: ["hamlet"],
   },
   {
@@ -46,7 +46,7 @@ export const creators: PMCreator[] = [
     regionCode: "russia",
     culturalRegionCode: "russian_literature",
     eraText: "19世纪俄国",
-    coverUrl: "/assets/images/creators/fyodor-dostoevsky.svg",
+    coverUrl: "./assets/images/creators/fyodor-dostoevsky.svg",
     workSlugs: ["crime-and-punishment"],
   },
   {
@@ -58,7 +58,7 @@ export const creators: PMCreator[] = [
     regionCode: "hongkong_china",
     culturalRegionCode: "chinese_literature",
     eraText: "现代",
-    coverUrl: "/assets/images/creators/jin-yong.svg",
+    coverUrl: "./assets/images/creators/jin-yong.svg",
     workSlugs: ["demi-gods-and-semi-devils"],
   },
   {
@@ -70,7 +70,7 @@ export const creators: PMCreator[] = [
     regionCode: "china",
     culturalRegionCode: "ancient_china_history",
     eraText: "西晋",
-    coverUrl: "/assets/images/creators/chen-shou.svg",
+    coverUrl: "./assets/images/creators/chen-shou.svg",
     workSlugs: ["records-of-the-three-kingdoms"],
   },
   {
@@ -82,7 +82,7 @@ export const creators: PMCreator[] = [
     regionCode: "mainland_china",
     culturalRegionCode: "mainland_china_film_tv",
     eraText: "当代",
-    coverUrl: "/assets/images/creators/zheng-xiaolong.svg",
+    coverUrl: "./assets/images/creators/zheng-xiaolong.svg",
     workSlugs: ["legend-of-zhen-huan"],
   },
   {
@@ -94,7 +94,7 @@ export const creators: PMCreator[] = [
     regionCode: "hongkong_china",
     culturalRegionCode: "hongkong_film_tv",
     eraText: "当代",
-    coverUrl: "/assets/images/creators/wang-jing.svg",
+    coverUrl: "./assets/images/creators/wang-jing.svg",
     workSlugs: ["the-proud-twins-2005"],
   },
   {
@@ -106,7 +106,7 @@ export const creators: PMCreator[] = [
     regionCode: "usa",
     culturalRegionCode: "western_film_tv",
     eraText: "当代",
-    coverUrl: "/assets/images/creators/francis-ford-coppola.svg",
+    coverUrl: "./assets/images/creators/francis-ford-coppola.svg",
     workSlugs: ["the-godfather"],
   },
   {
@@ -118,7 +118,7 @@ export const creators: PMCreator[] = [
     regionCode: "usa",
     culturalRegionCode: "western_film_tv",
     eraText: "当代",
-    coverUrl: "/assets/images/creators/todd-phillips.svg",
+    coverUrl: "./assets/images/creators/todd-phillips.svg",
     workSlugs: ["joker-2019"],
   },
   {
@@ -130,7 +130,7 @@ export const creators: PMCreator[] = [
     regionCode: "japan",
     culturalRegionCode: "japanese_anime",
     eraText: "当代",
-    coverUrl: "/assets/images/creators/masashi-kishimoto.svg",
+    coverUrl: "./assets/images/creators/masashi-kishimoto.svg",
     workSlugs: ["naruto"],
   },
   {
@@ -142,7 +142,7 @@ export const creators: PMCreator[] = [
     regionCode: "japan",
     culturalRegionCode: "japanese_anime",
     eraText: "当代",
-    coverUrl: "/assets/images/creators/eiichiro-oda.svg",
+    coverUrl: "./assets/images/creators/eiichiro-oda.svg",
     workSlugs: ["one-piece"],
   },
   {
@@ -154,7 +154,7 @@ export const creators: PMCreator[] = [
     regionCode: "japan",
     culturalRegionCode: "japanese_anime",
     eraText: "当代",
-    coverUrl: "/assets/images/creators/hajime-isayama.svg",
+    coverUrl: "./assets/images/creators/hajime-isayama.svg",
     workSlugs: ["attack-on-titan"],
   },
   {
@@ -166,7 +166,7 @@ export const creators: PMCreator[] = [
     regionCode: "japan",
     culturalRegionCode: "japanese_anime",
     eraText: "当代",
-    coverUrl: "/assets/images/creators/hideaki-anno.svg",
+    coverUrl: "./assets/images/creators/hideaki-anno.svg",
     workSlugs: ["neon-genesis-evangelion"],
   },
   {
@@ -178,7 +178,7 @@ export const creators: PMCreator[] = [
     regionCode: "japan",
     culturalRegionCode: "japanese_anime",
     eraText: "当代",
-    coverUrl: "/assets/images/creators/tsugumi-ohba.svg",
+    coverUrl: "./assets/images/creators/tsugumi-ohba.svg",
     workSlugs: ["death-note"],
   },
   {
@@ -190,7 +190,7 @@ export const creators: PMCreator[] = [
     regionCode: "france",
     culturalRegionCode: "western_history",
     eraText: "近代欧洲",
-    coverUrl: "/assets/images/creators/napoleon-author.svg",
+    coverUrl: "./assets/images/creators/napoleon-author.svg",
     workSlugs: ["napoleonic-history"],
   },
 ];
