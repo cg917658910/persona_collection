@@ -1,3 +1,4 @@
+import { ImageWithFallback } from './figma/ImageWithFallback'
 import { AlertCircle, ChevronDown, ChevronUp, ListMusic, LoaderCircle, Pause, Play, SkipBack, SkipForward, Square, X } from 'lucide-react'
 import { AnimatePresence, motion } from 'motion/react'
 import { usePlayer } from '../context/PlayerContext'
@@ -78,7 +79,7 @@ export function PlayerBar() {
 
               <div className="px-4 pb-4">
                 <div className="mb-4 flex items-center gap-3">
-                  {currentTrack.coverUrl ? <img src={currentTrack.coverUrl} alt={currentTrack.title} className="h-14 w-14 rounded-2xl object-cover" /> : <div className="h-14 w-14 rounded-2xl bg-white/5" />}
+                  {currentTrack.coverUrl ? <ImageWithFallback src={currentTrack.coverUrl} alt={currentTrack.title} className="h-14 w-14 rounded-2xl object-cover" /> : <div className="h-14 w-14 rounded-2xl bg-white/5" />}
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center gap-2">
                       <div className="truncate text-base text-white">{currentTrack.title}</div>
@@ -136,7 +137,7 @@ export function PlayerBar() {
                             onClick={() => void playAtIndex(idx)}
                             className={`mb-1 flex w-full items-center gap-3 rounded-2xl px-3 py-3 text-left transition ${active ? 'bg-[#D6B36A]/10' : 'bg-transparent hover:bg-white/5'}`}
                           >
-                            {track.coverUrl ? <img src={track.coverUrl} alt={track.title} className="h-10 w-10 rounded-xl object-cover" /> : <div className="h-10 w-10 rounded-xl bg-white/5" />}
+                            {track.coverUrl ? <ImageWithFallback src={track.coverUrl} alt={track.title} className="h-10 w-10 rounded-xl object-cover" /> : <div className="h-10 w-10 rounded-xl bg-white/5" />}
                             <div className="min-w-0 flex-1">
                               <div className={`truncate text-sm ${active ? 'text-[#F4E7C4]' : 'text-white/88'}`}>{track.title}</div>
                               <div className="truncate text-xs text-white/45">{track.subtitle || '人物主题曲'}</div>
@@ -167,7 +168,7 @@ export function PlayerBar() {
             className="block w-full text-left"
           >
             <div className="flex items-center gap-3 px-3 py-3">
-              {currentTrack.coverUrl ? <img src={currentTrack.coverUrl} alt={currentTrack.title} className="h-10 w-10 rounded-xl object-cover" /> : <div className="h-10 w-10 rounded-xl bg-white/5" />}
+              {currentTrack.coverUrl ? <ImageWithFallback src={currentTrack.coverUrl} alt={currentTrack.title} className="h-10 w-10 rounded-xl object-cover" /> : <div className="h-10 w-10 rounded-xl bg-white/5" />}
               <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2">
                   <div className="truncate text-sm text-white">{currentTrack.title}</div>

@@ -1,3 +1,4 @@
+import { ImageWithFallback } from './figma/ImageWithFallback'
 import { useNavigate } from "react-router";
 import { Music, Play } from "lucide-react";
 import type { CharacterListItem } from "../data/types";
@@ -27,7 +28,7 @@ export function CharacterCard({ character }: CharacterCardProps) {
           className="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0"
           style={{ background: '#0F1115' }}
         >
-          <img
+          <ImageWithFallback
             src={character.imageUrl}
             alt={character.name}
             className="w-full h-full object-cover"

@@ -1,3 +1,4 @@
+import { ImageWithFallback } from '../components/figma/ImageWithFallback'
 import { BookOpen, BrushIcon, ChevronRight, Film, Headphones, LibraryBig, Music2, ScrollText, Sparkles } from 'lucide-react'
 import { motion } from 'motion/react'
 import { useNavigate } from 'react-router'
@@ -38,7 +39,7 @@ export function Home() {
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1 }} className="mb-10">
         <div className="rounded-3xl overflow-hidden cursor-pointer" style={{ background: '#1A1D23', boxShadow: '0 8px 32px rgba(0,0,0,0.5)' }} onClick={() => navigate(`/character/${featuredCharacter.slug}`)}>
           <div className="relative h-80 overflow-hidden">
-            <img src={featuredCharacter.imageUrl} alt={featuredCharacter.name} className="w-full h-full object-cover" />
+            <ImageWithFallback src={featuredCharacter.imageUrl} alt={featuredCharacter.name} className="w-full h-full object-cover" />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(26,29,35,0.96) 0%, rgba(26,29,35,0.6) 50%, transparent 100%)' }} />
             <div className="absolute bottom-0 left-0 right-0 p-6">
               <div className="inline-flex mb-3 rounded-full px-3 py-1 text-xs" style={{ background: 'rgba(214,179,106,0.12)', color: '#D6B36A' }}>今日人物</div>
@@ -95,7 +96,7 @@ export function Home() {
         <div className="flex gap-3 overflow-x-auto pb-2" style={{ scrollbarWidth: 'none' }}>
           {characterCards.slice(0, 8).map((item, index) => (
             <motion.button key={item.id} initial={{ opacity: 0, x: 18 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.35, delay: 0.25 + index * 0.04 }} className="w-[180px] flex-shrink-0 rounded-2xl overflow-hidden text-left" style={{ background: '#1A1D23' }} onClick={() => navigate(`/character/${item.slug}`)}>
-              <img src={item.imageUrl} alt={item.name} className="h-40 w-full object-cover" />
+              <ImageWithFallback src={item.imageUrl} alt={item.name} className="h-40 w-full object-cover" />
               <div className="p-4">
                 <div className="text-sm text-white mb-1">{item.name}</div>
                 <div className="text-xs text-[#D6B36A] mb-2">{item.workTitle}</div>
@@ -114,7 +115,7 @@ export function Home() {
         <div className="grid grid-cols-2 gap-3">
           {featuredSongs.slice(0, 4).map((song) => (
             <button key={song.id} className="rounded-2xl overflow-hidden text-left" style={{ background: '#1A1D23' }} onClick={() => void playTrack({ title: song.title, subtitle: song.characterName, coverUrl: song.coverUrl, audioUrl: song.audioUrl })}>
-              <img src={song.coverUrl} alt={song.title} className="h-32 w-full object-cover" />
+              <ImageWithFallback src={song.coverUrl} alt={song.title} className="h-32 w-full object-cover" />
               <div className="p-4">
                 <div className="text-sm text-white">{song.title}</div>
                 <div className="mt-1 text-xs text-[#D6B36A]">{song.characterName}</div>
@@ -133,7 +134,7 @@ export function Home() {
         <div className="grid grid-cols-2 gap-3">
           {featuredWorks.slice(0, 4).map((item) => (
             <button key={item.id} className="rounded-2xl overflow-hidden text-left" style={{ background: '#1A1D23' }} onClick={() => navigate(`/work/${item.slug}`)}>
-              <img src={item.imageUrl} alt={item.title} className="h-32 w-full object-cover" />
+              <ImageWithFallback src={item.imageUrl} alt={item.title} className="h-32 w-full object-cover" />
               <div className="p-4">
                 <div className="text-sm text-white">{item.title}</div>
                 <div className="mt-1 text-xs text-[#D6B36A]">{item.creatorName}</div>
@@ -152,7 +153,7 @@ export function Home() {
         <div className="flex gap-3 overflow-x-auto pb-2" style={{ scrollbarWidth: 'none' }}>
           {themeCards.slice(0, 8).map((theme) => (
             <button key={theme.id} className="w-[168px] flex-shrink-0 overflow-hidden rounded-2xl text-left" style={{ background: '#1A1D23' }} onClick={() => navigate(`/theme/${theme.slug}`)}>
-              <img src={theme.imageUrl} alt={theme.name} className="h-28 w-full object-cover" />
+              <ImageWithFallback src={theme.imageUrl} alt={theme.name} className="h-28 w-full object-cover" />
               <div className="p-4">
                 <div className="text-sm text-white">{theme.name}</div>
                 <p className="mt-2 line-clamp-2 text-xs leading-6 text-white/55">{theme.description}</p>

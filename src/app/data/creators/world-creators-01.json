@@ -1,0 +1,156 @@
+[
+  {
+    "id": "creator-albert-camus-001",
+    "slug": "albert-camus",
+    "name": "阿尔贝·加缪",
+    "summary": "法国作家、思想家，以荒诞、存在处境与反抗伦理著称。",
+    "creatorTypeCode": "author",
+    "regionCode": "france",
+    "culturalRegionCode": "french_literature",
+    "eraText": "20世纪法国",
+    "coverUrl": "/assets/images/creators/albert-camus.webp",
+    "workSlugs": [
+      "the-stranger"
+    ]
+  },
+  {
+    "id": "creator-oscar-wilde-001",
+    "slug": "oscar-wilde",
+    "name": "奥斯卡·王尔德",
+    "summary": "英国作家、剧作家，以唯美主义、机智讽刺与哥特式颓美著称。",
+    "creatorTypeCode": "author",
+    "regionCode": "uk",
+    "culturalRegionCode": "british_literature",
+    "eraText": "19世纪英国",
+    "coverUrl": "/assets/images/creators/oscar-wilde.webp",
+    "workSlugs": [
+      "the-picture-of-dorian-gray"
+    ]
+  },
+  {
+    "id": "creator-milan-kundera-001",
+    "slug": "milan-kundera",
+    "name": "米兰·昆德拉",
+    "summary": "中欧小说家，以哲思叙事、历史经验与个体命运的轻与重书写著称。",
+    "creatorTypeCode": "author",
+    "regionCode": "",
+    "culturalRegionCode": "western_literature",
+    "eraText": "20世纪中欧",
+    "coverUrl": "/assets/images/creators/milan-kundera.webp",
+    "workSlugs": [
+      "the-unbearable-lightness-of-being"
+    ]
+  },
+  {
+    "id": "creator-chen-shi-san-001",
+    "slug": "chen-shi-san",
+    "name": "陈十三",
+    "summary": "香港编剧，以都市奇幻、宿命叙事与强人物关系著称。",
+    "creatorTypeCode": "screenwriter",
+    "regionCode": "hongkong_china",
+    "culturalRegionCode": "hongkong_film_tv",
+    "eraText": "当代香港",
+    "coverUrl": "/assets/images/creators/chen-shi-san.webp",
+    "workSlugs": [
+      "my-date-with-a-vampire"
+    ]
+  },
+  {
+    "id": "creator-gordon-chan-001",
+    "slug": "gordon-chan",
+    "name": "陈嘉上",
+    "summary": "香港导演，擅长类型叙事、动作喜剧与商业电影节奏。",
+    "creatorTypeCode": "director",
+    "regionCode": "hongkong_china",
+    "culturalRegionCode": "hongkong_film_tv",
+    "eraText": "当代香港",
+    "coverUrl": "/assets/images/creators/gordon-chan.webp",
+    "workSlugs": [
+      "king-of-beggars"
+    ]
+  },
+  {
+    "id": "creator-joachim-trier-001",
+    "slug": "joachim-trier",
+    "name": "约阿希姆·提尔",
+    "summary": "挪威导演，以都市情感、青年迷惘与轻盈感伤并置的电影语言著称。",
+    "creatorTypeCode": "director",
+    "regionCode": "",
+    "culturalRegionCode": "western_film_tv",
+    "eraText": "当代北欧",
+    "coverUrl": "/assets/images/creators/joachim-trier.webp",
+    "workSlugs": [
+      "the-worst-person-in-the-world"
+    ]
+  },
+  {
+    "id": "creator-giuseppe-tornatore-001",
+    "slug": "giuseppe-tornatore",
+    "name": "朱塞佩·托纳多雷",
+    "summary": "意大利导演，以抒情影像、记忆主题与浪漫忧伤见长。",
+    "creatorTypeCode": "director",
+    "regionCode": "",
+    "culturalRegionCode": "western_film_tv",
+    "eraText": "当代欧洲电影",
+    "coverUrl": "/assets/images/creators/giuseppe-tornatore.webp",
+    "workSlugs": [
+      "the-legend-of-1900"
+    ]
+  },
+  {
+    "id": "creator-damien-chazelle-001",
+    "slug": "damien-chazelle",
+    "name": "达米恩·查泽雷",
+    "summary": "美国导演，以音乐、野心、节奏与青春代价为核心命题。",
+    "creatorTypeCode": "director",
+    "regionCode": "usa",
+    "culturalRegionCode": "western_film_tv",
+    "eraText": "当代美国",
+    "coverUrl": "/assets/images/creators/damien-chazelle.webp",
+    "workSlugs": [
+      "la-la-land"
+    ]
+  },
+  {
+    "id": "creator-leo-tolstoy-001",
+    "slug": "leo-tolstoy",
+    "name": "列夫·托尔斯泰",
+    "summary": "俄国作家，以宏阔现实主义、伦理思辨与复杂人物塑造著称。",
+    "creatorTypeCode": "author",
+    "regionCode": "russia",
+    "culturalRegionCode": "russian_literature",
+    "eraText": "19世纪俄国",
+    "coverUrl": "/assets/images/creators/leo-tolstoy.webp",
+    "workSlugs": [
+      "anna-karenina"
+    ]
+  },
+  {
+    "id": "creator-william-somerset-maugham-001",
+    "slug": "william-somerset-maugham",
+    "name": "W. Somerset Maugham",
+    "summary": "英国作家，以冷静叙事、情感剖析与文明幻象下的人性观察著称。",
+    "creatorTypeCode": "author",
+    "regionCode": "uk",
+    "culturalRegionCode": "british_literature",
+    "eraText": "20世纪英国",
+    "coverUrl": "/assets/images/creators/william-somerset-maugham.webp",
+    "workSlugs": [
+      "the-painted-veil"
+    ]
+  },
+  {
+    "id": "creator-gabriel-garcia-marquez-001",
+    "slug": "gabriel-garcia-marquez",
+    "name": "加西亚·马尔克斯",
+    "summary": "哥伦比亚小说家，以魔幻现实主义、时间循环与家族命运叙事著称。",
+    "creatorTypeCode": "author",
+    "regionCode": "",
+    "culturalRegionCode": "western_literature",
+    "eraText": "20世纪拉美",
+    "coverUrl": "/assets/images/creators/gabriel-garcia-marquez.webp",
+    "workSlugs": [
+      "one-hundred-years-of-solitude"
+    ]
+  }
+]

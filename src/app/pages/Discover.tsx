@@ -1,3 +1,4 @@
+import { ImageWithFallback } from '../components/figma/ImageWithFallback'
 import { ArrowRight, Play, RefreshCcw, Sparkles } from 'lucide-react'
 import { AnimatePresence, motion } from 'motion/react'
 import { useMemo, useState } from 'react'
@@ -83,7 +84,7 @@ export function Discover() {
         <AnimatePresence mode="wait">
           <motion.div key={`${groupSlug || 'all'}-${current.id}`} initial={{ opacity: 0, y: 24, scale: 0.98 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: -24, scale: 0.98 }} transition={{ duration: 0.45 }} className="rounded-[28px] overflow-hidden" style={{ background: '#1A1D23', boxShadow: '0 12px 40px rgba(0,0,0,0.45)' }}>
             <div className="relative h-[440px] overflow-hidden">
-              <img src={current.imageUrl} alt={current.name} className="w-full h-full object-cover" />
+              <ImageWithFallback src={current.imageUrl} alt={current.name} className="w-full h-full object-cover" />
               <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(26,29,35,0.96) 0%, rgba(26,29,35,0.55) 55%, transparent 100%)' }} />
               <div className="absolute inset-x-0 bottom-0 p-6">
                 <div className="mb-3 flex items-center justify-between">
@@ -114,7 +115,7 @@ export function Discover() {
         <div className="space-y-3">
           {discovered.slice(-3).reverse().map((item, idx) => (
             <motion.button key={item.id} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, delay: idx * 0.05 }} className="w-full rounded-2xl p-4 text-left flex items-center gap-4" style={{ background: '#1A1D23' }} onClick={() => navigate(`/character/${item.slug}`)}>
-              <img src={item.imageUrl} alt={item.name} className="w-16 h-16 rounded-xl object-cover" />
+              <ImageWithFallback src={item.imageUrl} alt={item.name} className="w-16 h-16 rounded-xl object-cover" />
               <div className="min-w-0"><div className="text-sm mb-1" style={{ color: '#FFFFFF' }}>{item.name}</div><div className="text-xs line-clamp-2" style={{ color: '#6C7A89' }}>{item.description}</div></div>
             </motion.button>
           ))}

@@ -1,0 +1,2614 @@
+[
+  {
+    "id": "char-lin-daiyu",
+    "slug": "lin-daiyu",
+    "name": "林黛玉",
+    "aliases": [],
+    "characterTypeCode": "literary",
+    "subtype": "classical_novel_character",
+    "gender": "female",
+    "regionCode": "china",
+    "culturalRegionCode": "chinese_literature",
+    "eraText": "清代小说语境",
+    "summary": "《红楼梦》中的核心人物，高敏感、高自尊，极度珍视真情。",
+    "coverUrl": "/assets/images/characters/lin-daiyu.webp",
+    "oneLineDefinition": "她不是脆弱，她是过度敏感、过度清醒、又过度珍视真情的人。",
+    "coreIdentity": "高敏感、高自尊的真情承受者",
+    "coreFear": "被辜负、被轻慢、真情无归处",
+    "coreConflict": "强自尊与深依恋并存",
+    "primaryMotivation": "被理解、被珍视的真情",
+    "primaryTheme": "悲剧人格",
+    "emotionalTone": "清冷、哀愁、细腻",
+    "emotionalTemperature": "low",
+    "psychologicalWound": "寄人篱下与长期情感不安定感。",
+    "fateArc": "从寄人篱下的敏感少女，到在真情幻灭中走向悲剧结局。",
+    "endingState": "真情无所安放，生命走向消散。",
+    "surfaceTraits": [
+      "敏感",
+      "聪慧",
+      "清冷",
+      "有才情"
+    ],
+    "deepTraits": [
+      "高自尊",
+      "高防御",
+      "深依恋",
+      "低安全感"
+    ],
+    "dominantEmotions": [
+      "哀愁",
+      "委屈",
+      "敏感"
+    ],
+    "suppressedEmotions": [
+      "愤怒",
+      "占有欲"
+    ],
+    "valuesTags": [
+      "真情",
+      "尊严",
+      "纯粹"
+    ],
+    "symbolicImages": [
+      "落花",
+      "细雨",
+      "孤灯",
+      "竹影"
+    ],
+    "colors": [
+      {
+        "name": "青灰",
+        "hex": "#73808E"
+      },
+      {
+        "name": "冷白",
+        "hex": "#D9DCE3"
+      },
+      {
+        "name": "暗青",
+        "hex": "#45525B"
+      }
+    ],
+    "elements": [
+      "风",
+      "雨",
+      "雾"
+    ],
+    "soundscapeKeywords": [
+      "风铃",
+      "轻弦",
+      "叹息",
+      "雨滴"
+    ],
+    "relationshipProfile": {
+      "love": "深情，但很难完全放心；越在乎，越害怕被辜负。",
+      "authority": "敏感而疏离，她不愿轻易向外部秩序交出自己。",
+      "friends": "面对真诚的人会柔软，但防御始终存在。",
+      "enemies": "她不一定直接对抗，却会用尖锐与冷感保护自尊。"
+    },
+    "timeline": [
+      {
+        "title": "进入贾府",
+        "summary": "寄人篱下，她第一次进入一个并不属于自己的世界。"
+      },
+      {
+        "title": "与宝玉相知",
+        "summary": "她遇见了似乎唯一能在精神上贴近自己的人。"
+      },
+      {
+        "title": "误解与拉扯",
+        "summary": "自尊与依恋反复碰撞，她越来越难安放自己的心。"
+      },
+      {
+        "title": "真情破灭",
+        "summary": "现实压过感情，希望被一点点掐灭。"
+      }
+    ],
+    "workSlugs": [
+      "dream-of-the-red-chamber"
+    ],
+    "creatorSlugs": [
+      "cao-xueqin"
+    ],
+    "songSlugs": [
+      "lin-daiyu-theme-v1"
+    ],
+    "themeSlugs": [
+      "tragic",
+      "melancholic",
+      "self-divided"
+    ],
+    "similarCharacterSlugs": [
+      "hamlet-character",
+      "raskolnikov"
+    ]
+  },
+  {
+    "id": "char_anna-karenina",
+    "slug": "anna-karenina",
+    "name": "安娜·卡列尼娜",
+    "aliases": [
+      "安娜"
+    ],
+    "characterTypeCode": "literary",
+    "subtype": "novel_character",
+    "gender": "female",
+    "regionCode": "russia",
+    "culturalRegionCode": "russian_literature",
+    "eraText": "19世纪俄国小说",
+    "summary": "《安娜卡列尼娜》中的安娜，在爱情、欲望与社会规训中走向悲剧。",
+    "coverUrl": "/assets/images/characters/anna-karenina.webp",
+    "oneLineDefinition": "在爱与秩序的撕裂中燃尽自己的人。",
+    "coreIdentity": "渴望真爱却被社会铁轨碾压的女性",
+    "coreFear": "被抛弃、被羞辱、被世界彻底驱逐",
+    "coreConflict": "爱情的绝对性与社会伦理的压迫无法共存",
+    "primaryMotivation": "抓住一种真实而炽烈的爱",
+    "primaryTheme": "欲望、爱情与社会审判",
+    "emotionalTone": "华丽、炽烈、绝望",
+    "emotionalTemperature": "high",
+    "psychologicalWound": "越渴望被爱，越害怕失去，于是不断被怀疑和嫉妒侵蚀。",
+    "fateArc": "从耀眼而克制的贵妇，走向被情感与舆论双重吞噬的悲剧中心。",
+    "endingState": "在绝望与孤独中走向毁灭。",
+    "surfaceTraits": [
+      "优雅",
+      "聪慧",
+      "迷人"
+    ],
+    "deepTraits": [
+      "炽烈",
+      "不安",
+      "绝对化"
+    ],
+    "dominantEmotions": [
+      "爱欲",
+      "焦虑",
+      "绝望"
+    ],
+    "suppressedEmotions": [
+      "羞耻",
+      "愤怒"
+    ],
+    "valuesTags": [
+      "真爱",
+      "自由",
+      "自我完整"
+    ],
+    "symbolicImages": [
+      "火车",
+      "黑纱",
+      "舞会",
+      "雪夜"
+    ],
+    "colors": [
+      {
+        "name": "黑曜黑",
+        "hex": "#1B1B1E"
+      },
+      {
+        "name": "深红",
+        "hex": "#7A1F2A"
+      }
+    ],
+    "elements": [
+      "雪",
+      "蒸汽",
+      "烛火"
+    ],
+    "soundscapeKeywords": [
+      "列车轰鸣",
+      "古典弦乐",
+      "丝绸摩擦",
+      "冬夜风声"
+    ],
+    "relationshipProfile": {
+      "love": "一旦投入便追求绝对与全部。",
+      "authority": "被礼法与体面持续规训和压迫。",
+      "friends": "难以获得真正理解，更多被凝视和议论。",
+      "enemies": "社会审判与内心疑惧共同围困她。"
+    },
+    "timeline": [
+      {
+        "title": "在社交场中耀眼登场",
+        "summary": "她的魅力足以改变周围所有人的视线。"
+      },
+      {
+        "title": "与渥伦斯基相恋",
+        "summary": "爱情点燃，也带来无法挽回的裂缝。"
+      },
+      {
+        "title": "被社会排斥",
+        "summary": "体面世界开始把她推向边缘。"
+      },
+      {
+        "title": "走向铁轨",
+        "summary": "在爱、疑惧和绝望中彻底崩塌。"
+      }
+    ],
+    "workSlugs": [
+      "anna-karenina"
+    ],
+    "creatorSlugs": [
+      "leo-tolstoy"
+    ],
+    "songSlugs": [
+      "song-anna-karenina-theme"
+    ],
+    "themeSlugs": [
+      "love-and-destruction"
+    ],
+    "similarCharacterSlugs": [],
+    "coverPrompt": "为“拾荒者·人物集”生成《安娜卡列尼娜》人物安娜·卡列尼娜的竖版人物封面。关键词：俄国贵妇、爱情、毁灭、火车、雪夜、社会审判。主体为一位身着黑色华服的美丽女性，神情炽烈又疲惫，站在雪夜与蒸汽弥漫的站台边，远处隐约有火车灯光与上流社交场的幻影。氛围华丽、压抑、悲剧、宿命。色调以黑曜黑、深红、冷白为主。半写实、经典文学电影感，无文字。"
+  },
+  {
+    "id": "char_meursault",
+    "slug": "meursault",
+    "name": "默尔索",
+    "aliases": [],
+    "characterTypeCode": "literary",
+    "subtype": "novel_character",
+    "gender": "male",
+    "regionCode": "france",
+    "culturalRegionCode": "french_literature",
+    "eraText": "20世纪现代主义",
+    "summary": "《局外人》中的主人公，对世界保持疏离与冷感，在荒诞中被推向审判。",
+    "coverUrl": "/assets/images/characters/meursault.webp",
+    "oneLineDefinition": "在荒诞世界中保持冷感清醒的人。",
+    "coreIdentity": "拒绝虚假表演的旁观者",
+    "coreFear": "被迫说出并不相信的话",
+    "coreConflict": "真实感受与社会期待之间的断裂",
+    "primaryMotivation": "维持对存在的诚实，不向虚伪妥协",
+    "primaryTheme": "荒诞与诚实",
+    "emotionalTone": "冷静、疏离、空旷",
+    "emotionalTemperature": "low",
+    "psychologicalWound": "与世界连接薄弱，无法按社会脚本表演情感。",
+    "fateArc": "从日常麻木走向命运审判，在极端处境中完成对荒诞的直视。",
+    "endingState": "在死亡逼近前获得一种清醒的平静。",
+    "surfaceTraits": [
+      "冷静",
+      "迟钝",
+      "诚实"
+    ],
+    "deepTraits": [
+      "疏离",
+      "反表演",
+      "存在主义"
+    ],
+    "dominantEmotions": [
+      "空白",
+      "疲惫",
+      "平静"
+    ],
+    "suppressedEmotions": [
+      "愤怒",
+      "恐惧"
+    ],
+    "valuesTags": [
+      "真实",
+      "诚实",
+      "不妥协"
+    ],
+    "symbolicImages": [
+      "烈日",
+      "海滩",
+      "法庭",
+      "白墙"
+    ],
+    "colors": [
+      {
+        "name": "日晒白",
+        "hex": "#E8E1D5"
+      },
+      {
+        "name": "沙土灰",
+        "hex": "#A89B8A"
+      }
+    ],
+    "elements": [
+      "太阳",
+      "热风",
+      "盐",
+      "尘土"
+    ],
+    "soundscapeKeywords": [
+      "蝉鸣",
+      "空旷脚步",
+      "海风",
+      "法庭回声"
+    ],
+    "relationshipProfile": {
+      "love": "不擅长表达爱，却不愿虚伪承诺。",
+      "authority": "对制度和权威缺乏敬畏，只感到荒诞。",
+      "friends": "关系松散，不主动维系。",
+      "enemies": "真正敌人不是个人，而是社会的道德审判。"
+    },
+    "timeline": [
+      {
+        "title": "母亲去世",
+        "summary": "对死亡反应冷淡，引发外界误读。"
+      },
+      {
+        "title": "海滩枪响",
+        "summary": "在烈日与眩目中越过那条无法返回的线。"
+      },
+      {
+        "title": "法庭审判",
+        "summary": "真正被审判的不是罪行，而是他不肯表演悲伤。"
+      },
+      {
+        "title": "直视死亡",
+        "summary": "在末日式清醒中接受世界的冷漠。"
+      }
+    ],
+    "workSlugs": [
+      "the-stranger"
+    ],
+    "creatorSlugs": [
+      "albert-camus"
+    ],
+    "songSlugs": [
+      "song-meursault-theme"
+    ],
+    "themeSlugs": [
+      "absurdity"
+    ],
+    "similarCharacterSlugs": [],
+    "coverPrompt": "为“拾荒者·人物集”生成《局外人》人物默尔索的竖版人物封面。关键词：荒诞、疏离、冷感、日晒、审判、存在主义。画面主体为一名站在阿尔及尔强烈日光下的年轻男性，白衬衫、微汗、神情平静而空白，远处隐约是海滩与法院长廊。氛围克制、干燥、刺眼、空旷。色调以日晒白、沙灰、褪色蓝为主。半写实、文学电影感、现代主义封面气质，无文字。"
+  },
+  {
+    "id": "char_dorian_gray",
+    "slug": "dorian-gray",
+    "name": "道林·格雷",
+    "aliases": [],
+    "characterTypeCode": "literary",
+    "subtype": "novel_character",
+    "gender": "male",
+    "regionCode": "uk",
+    "culturalRegionCode": "british_literature",
+    "eraText": "19世纪唯美主义",
+    "summary": "《道林格雷的画像》的美少年，把灵魂的腐败藏进画像，用青春交换堕落。",
+    "coverUrl": "/assets/images/characters/dorian-gray.webp",
+    "oneLineDefinition": "用青春遮蔽腐坏灵魂的人。",
+    "coreIdentity": "沉迷美与自恋的灵魂赌徒",
+    "coreFear": "衰老、丑陋与真相暴露",
+    "coreConflict": "外表永恒纯净与内里不断腐败之间的分裂",
+    "primaryMotivation": "抓住永恒青春与感官快感",
+    "primaryTheme": "美、欲望与腐败",
+    "emotionalTone": "华丽、阴郁、危险",
+    "emotionalTemperature": "medium",
+    "psychologicalWound": "把自我价值完全寄托在外表与他人凝视之上。",
+    "fateArc": "从无辜少年滑向审美主义深渊，最终被隐藏的真相反噬。",
+    "endingState": "试图毁掉罪证时被自身腐坏吞没。",
+    "surfaceTraits": [
+      "俊美",
+      "优雅",
+      "迷人"
+    ],
+    "deepTraits": [
+      "虚荣",
+      "腐败",
+      "分裂"
+    ],
+    "dominantEmotions": [
+      "陶醉",
+      "焦虑",
+      "恐惧"
+    ],
+    "suppressedEmotions": [
+      "羞耻",
+      "悔恨"
+    ],
+    "valuesTags": [
+      "美",
+      "欲望",
+      "自我迷恋"
+    ],
+    "symbolicImages": [
+      "画像",
+      "镜子",
+      "玫瑰",
+      "暗室"
+    ],
+    "colors": [
+      {
+        "name": "墨绿",
+        "hex": "#21352B"
+      },
+      {
+        "name": "酒红",
+        "hex": "#6E1F2C"
+      }
+    ],
+    "elements": [
+      "香气",
+      "天鹅绒",
+      "烛火"
+    ],
+    "soundscapeKeywords": [
+      "低语",
+      "古典弦乐",
+      "壁钟",
+      "帷幕摩擦"
+    ],
+    "relationshipProfile": {
+      "love": "更多迷恋自我投影，而非真正理解他人。",
+      "authority": "容易受诱导性的精神权威操控。",
+      "friends": "把朋友当审美世界的观众与道具。",
+      "enemies": "所有逼近真相的人都会成为威胁。"
+    },
+    "timeline": [
+      {
+        "title": "被画像定格",
+        "summary": "第一次意识到美貌会流逝，种下诅咒。"
+      },
+      {
+        "title": "沉入享乐",
+        "summary": "在感官、艺术与诱惑中不断越界。"
+      },
+      {
+        "title": "画像腐败",
+        "summary": "罪恶和时间都被转移到那张画上。"
+      },
+      {
+        "title": "自我毁灭",
+        "summary": "当他试图刺穿画像，也刺穿了自己。"
+      }
+    ],
+    "workSlugs": [
+      "the-picture-of-dorian-gray"
+    ],
+    "creatorSlugs": [
+      "oscar-wilde"
+    ],
+    "songSlugs": [
+      "song-dorian-gray-theme"
+    ],
+    "themeSlugs": [
+      "beauty-and-decay"
+    ],
+    "similarCharacterSlugs": [],
+    "coverPrompt": "为“拾荒者·人物集”生成《道林格雷的画像》人物道林·格雷的竖版人物封面。关键词：唯美主义、青春、腐败、自恋、镜像、秘密画像。主体为一位维多利亚时代的俊美青年，面容苍白精致，穿暗色礼服，站在豪华却阴影密布的室内，身后隐约出现一幅被布遮住的诡异画像与破碎镜面。氛围奢华、阴郁、危险、诱惑。色调以墨绿、酒红、金色旧光为主。半写实、哥特文学电影感，无文字。"
+  },
+  {
+    "id": "char-sun-wu-kong",
+    "slug": "sun-wu-kong",
+    "name": "孙悟空",
+    "aliases": [],
+    "characterTypeCode": "literary",
+    "subtype": "classical_novel_character",
+    "gender": "male",
+    "regionCode": "china",
+    "culturalRegionCode": "chinese_literature",
+    "eraText": "古典神魔小说语境",
+    "summary": "《西游记》核心人物，不愿被驯服的自由反抗者。",
+    "coverUrl": "/assets/images/characters/sun-wu-kong.webp",
+    "oneLineDefinition": "他不是不守规矩，他是不愿被不合理的规矩困住。",
+    "coreIdentity": "不愿被驯服的自由反抗者",
+    "coreFear": "被压制、被驯服、失去自我",
+    "coreConflict": "野性自由与责任规训之间的冲突",
+    "primaryMotivation": "自由与自我证明",
+    "primaryTheme": "反叛者",
+    "emotionalTone": "热烈、桀骜、压不住的生命力",
+    "emotionalTemperature": "high",
+    "psychologicalWound": "力量被权威否定，自由被强制规训。",
+    "fateArc": "从纯粹反抗到懂得承担，从不服天命到有了守护使命。",
+    "endingState": "桀骜仍在，但被责任重塑。",
+    "surfaceTraits": [
+      "机敏",
+      "狂傲",
+      "热血",
+      "顽强"
+    ],
+    "deepTraits": [
+      "高自尊",
+      "反权威",
+      "强生命张力"
+    ],
+    "dominantEmotions": [
+      "不服",
+      "兴奋",
+      "愤怒",
+      "热血"
+    ],
+    "suppressedEmotions": [
+      "孤独",
+      "委屈"
+    ],
+    "valuesTags": [
+      "自由",
+      "尊严",
+      "真实",
+      "不屈"
+    ],
+    "symbolicImages": [
+      "筋斗云",
+      "烈火",
+      "金箍棒",
+      "雷鸣"
+    ],
+    "colors": [
+      {
+        "name": "金",
+        "hex": "#D6B36A"
+      },
+      {
+        "name": "赤",
+        "hex": "#A64B3C"
+      },
+      {
+        "name": "黑",
+        "hex": "#1A1D23"
+      }
+    ],
+    "elements": [
+      "火",
+      "风",
+      "雷"
+    ],
+    "soundscapeKeywords": [
+      "鼓点",
+      "风啸",
+      "金石碰撞"
+    ],
+    "relationshipProfile": {
+      "love": "不擅长表达柔软，但会用行动守护。",
+      "authority": "强烈反权威，只有认可对方才会真正服气。",
+      "friends": "重义气，愿意一起闯和一起扛。",
+      "enemies": "直接对抗，不迂回，也不屈服。"
+    },
+    "timeline": [
+      {
+        "title": "出海学艺",
+        "summary": "为了更强的力量和更大的自由，主动离开原点。"
+      },
+      {
+        "title": "大闹天宫",
+        "summary": "对抗天庭秩序，把不服写成最响的一次宣告。"
+      },
+      {
+        "title": "五行山下",
+        "summary": "第一次真正被压住，也第一次被迫面对规则。"
+      },
+      {
+        "title": "西行取经",
+        "summary": "在被约束中学会承担，在守护里完成重塑。"
+      }
+    ],
+    "workSlugs": [
+      "journey-to-the-west"
+    ],
+    "creatorSlugs": [
+      "wu-chengen"
+    ],
+    "songSlugs": [
+      "sun-wu-kong-theme-v1"
+    ],
+    "themeSlugs": [
+      "rebels",
+      "guardians"
+    ],
+    "similarCharacterSlugs": [
+      "qiao-feng",
+      "naruto-uzumaki"
+    ]
+  },
+  {
+    "id": "char-hamlet-character",
+    "slug": "hamlet-character",
+    "name": "哈姆雷特",
+    "aliases": [],
+    "characterTypeCode": "literary",
+    "subtype": "drama_character",
+    "gender": "male",
+    "regionCode": "uk",
+    "culturalRegionCode": "british_literature",
+    "eraText": "丹麦宫廷悲剧语境",
+    "summary": "莎士比亚笔下最典型的自我犹疑者与存在困境承受者。",
+    "coverUrl": "/assets/images/characters/hamlet-character.webp",
+    "oneLineDefinition": "他不是不行动，他是想得太深，深到行动本身也成了问题。",
+    "coreIdentity": "过度自省的复仇承担者",
+    "coreFear": "行动错误、真相不真、灵魂堕落",
+    "coreConflict": "复仇责任与存在怀疑之间的冲突",
+    "primaryMotivation": "真相与正当性",
+    "primaryTheme": "自我撕裂者",
+    "emotionalTone": "阴郁、冷感、持续不安",
+    "emotionalTemperature": "low",
+    "psychologicalWound": "父王之死与母后再嫁造成的世界崩塌。",
+    "fateArc": "在追问真相与迟疑行动中走向全面毁灭。",
+    "endingState": "完成复仇，但一切已无法挽回。",
+    "surfaceTraits": [
+      "聪慧",
+      "阴郁",
+      "克制"
+    ],
+    "deepTraits": [
+      "高反思",
+      "高矛盾感",
+      "高道德压力"
+    ],
+    "dominantEmotions": [
+      "怀疑",
+      "悲伤",
+      "焦虑"
+    ],
+    "suppressedEmotions": [
+      "愤怒",
+      "温柔"
+    ],
+    "valuesTags": [
+      "真相",
+      "正当性",
+      "伦理"
+    ],
+    "symbolicImages": [
+      "黑衣",
+      "钟声",
+      "镜子",
+      "城堡阴影"
+    ],
+    "colors": [
+      {
+        "name": "黑",
+        "hex": "#111318"
+      },
+      {
+        "name": "灰",
+        "hex": "#6C7A89"
+      },
+      {
+        "name": "银",
+        "hex": "#C6CBD3"
+      }
+    ],
+    "elements": [
+      "雾",
+      "夜"
+    ],
+    "soundscapeKeywords": [
+      "钟声",
+      "低弦",
+      "回音"
+    ],
+    "relationshipProfile": {
+      "love": "无法安心投入，越靠近就越被怀疑和责任拉扯。",
+      "authority": "彻底不信任被腐化的权威。",
+      "friends": "只对少数可信的人保留真诚。",
+      "enemies": "真正的敌人不只是篡位者，也是他内心无法停下的怀疑。"
+    },
+    "timeline": [
+      {
+        "title": "父王之死",
+        "summary": "世界秩序崩塌，他第一次感到现实不再可信。"
+      },
+      {
+        "title": "幽灵现身",
+        "summary": "复仇命令降临，也把他推入无法回头的精神战场。"
+      },
+      {
+        "title": "不断试探",
+        "summary": "他既想确认真相，又被行动的后果绊住。"
+      },
+      {
+        "title": "全面毁灭",
+        "summary": "所有迟疑与真相最终指向一场无法收束的悲剧。"
+      }
+    ],
+    "workSlugs": [
+      "hamlet"
+    ],
+    "creatorSlugs": [
+      "william-shakespeare"
+    ],
+    "songSlugs": [
+      "hamlet-theme-v1"
+    ],
+    "themeSlugs": [
+      "tragic",
+      "self-divided",
+      "melancholic"
+    ],
+    "similarCharacterSlugs": [
+      "lin-daiyu",
+      "raskolnikov"
+    ]
+  },
+  {
+    "id": "char-raskolnikov",
+    "slug": "raskolnikov",
+    "name": "拉斯柯尔尼科夫",
+    "aliases": [],
+    "characterTypeCode": "literary",
+    "subtype": "novel_character",
+    "gender": "male",
+    "regionCode": "russia",
+    "culturalRegionCode": "russian_literature",
+    "eraText": "19世纪俄国城市小说语境",
+    "summary": "《罪与罚》主人公，在罪、傲慢、痛苦与救赎中撕裂的人物。",
+    "coverUrl": "/assets/images/characters/raskolnikov.webp",
+    "oneLineDefinition": "他不是单纯作恶，他是试图以思想凌驾良知，最终却被灵魂反噬的人。",
+    "coreIdentity": "试图超越道德边界的自我实验者",
+    "coreFear": "平庸、无价值、思想失败",
+    "coreConflict": "超人理论与良知审判之间的冲突",
+    "primaryMotivation": "证明自己并超越普通人",
+    "primaryTheme": "自我撕裂者",
+    "emotionalTone": "压抑、发热、痛苦、撕裂",
+    "emotionalTemperature": "high",
+    "psychologicalWound": "贫困、羞耻与强烈的自我优越感冲突。",
+    "fateArc": "从思想性越界走向现实犯罪，再被良知与痛苦逼向自白和救赎。",
+    "endingState": "在痛苦中出现重生可能。",
+    "surfaceTraits": [
+      "聪明",
+      "孤僻",
+      "冷峻"
+    ],
+    "deepTraits": [
+      "高傲",
+      "羞耻感强",
+      "高撕裂感"
+    ],
+    "dominantEmotions": [
+      "羞耻",
+      "痛苦",
+      "傲慢"
+    ],
+    "suppressedEmotions": [
+      "求助",
+      "柔软"
+    ],
+    "valuesTags": [
+      "意义",
+      "价值",
+      "自我证明"
+    ],
+    "symbolicImages": [
+      "旧城",
+      "热病",
+      "狭窄房间",
+      "十字架"
+    ],
+    "colors": [
+      {
+        "name": "灰黄",
+        "hex": "#8C806A"
+      },
+      {
+        "name": "暗棕",
+        "hex": "#4A3E36"
+      },
+      {
+        "name": "旧白",
+        "hex": "#D8D2C7"
+      }
+    ],
+    "elements": [
+      "热",
+      "尘"
+    ],
+    "soundscapeKeywords": [
+      "低沉独白",
+      "心跳",
+      "闷热空气"
+    ],
+    "relationshipProfile": {
+      "love": "难以直接接受爱，越靠近越容易退回自我审判。",
+      "authority": "蔑视规则，却又被规则的审判深深困住。",
+      "friends": "容易自我隔离，很难稳定信任。",
+      "enemies": "真正的敌人是自己的理论和良知。"
+    },
+    "timeline": [
+      {
+        "title": "贫困与构想",
+        "summary": "极端理论逐渐成形。"
+      },
+      {
+        "title": "实施犯罪",
+        "summary": "他主动跨越边界，试图验证自己。"
+      },
+      {
+        "title": "精神崩塌",
+        "summary": "良知与恐惧开始反噬。"
+      },
+      {
+        "title": "走向自白",
+        "summary": "在痛苦中逼近某种救赎。"
+      }
+    ],
+    "workSlugs": [
+      "crime-and-punishment"
+    ],
+    "creatorSlugs": [
+      "fyodor-dostoevsky"
+    ],
+    "songSlugs": [
+      "raskolnikov-theme-v1"
+    ],
+    "themeSlugs": [
+      "tragic",
+      "self-divided"
+    ],
+    "similarCharacterSlugs": [
+      "hamlet-character",
+      "light-yagami"
+    ]
+  },
+  {
+    "id": "char-qiao-feng",
+    "slug": "qiao-feng",
+    "name": "乔峰",
+    "aliases": [],
+    "characterTypeCode": "literary",
+    "subtype": "martial_arts_character",
+    "gender": "male",
+    "regionCode": "china",
+    "culturalRegionCode": "chinese_literature",
+    "eraText": "武侠小说语境",
+    "summary": "《天龙八部》核心人物，在身份撕裂中仍尽力守住大义与情义。",
+    "coverUrl": "/assets/images/characters/qiao-feng.webp",
+    "oneLineDefinition": "他不是单纯的大侠，他是在身世撕裂与天下大义之间独自承受的人。",
+    "coreIdentity": "在身世裂变中守住担当的孤勇者",
+    "coreFear": "伤害所爱、背弃大义、无处归属",
+    "coreConflict": "个体身份与民族阵营、情义与局势之间的冲突",
+    "primaryMotivation": "大义、归属与尊严",
+    "primaryTheme": "守护者",
+    "emotionalTone": "苍凉、豪烈、孤独",
+    "emotionalTemperature": "high",
+    "psychologicalWound": "身世真相撕裂既有认同与归属。",
+    "fateArc": "从江湖豪杰到被命运不断剥夺归属，最终以自我终结守住更大的停止。",
+    "endingState": "以死亡截断更大冲突，留下苍凉回响。",
+    "surfaceTraits": [
+      "豪迈",
+      "刚烈",
+      "稳重"
+    ],
+    "deepTraits": [
+      "责任感强",
+      "自我要求高",
+      "孤勇"
+    ],
+    "dominantEmotions": [
+      "责任",
+      "悲凉",
+      "愤怒"
+    ],
+    "suppressedEmotions": [
+      "脆弱",
+      "委屈"
+    ],
+    "valuesTags": [
+      "大义",
+      "情义",
+      "担当"
+    ],
+    "symbolicImages": [
+      "北风",
+      "烈酒",
+      "旷野",
+      "马蹄"
+    ],
+    "colors": [
+      {
+        "name": "黑",
+        "hex": "#1A1D23"
+      },
+      {
+        "name": "褐",
+        "hex": "#5C4633"
+      },
+      {
+        "name": "暗金",
+        "hex": "#8C6B3D"
+      }
+    ],
+    "elements": [
+      "风",
+      "土"
+    ],
+    "soundscapeKeywords": [
+      "北风",
+      "战鼓余音",
+      "烈马"
+    ],
+    "relationshipProfile": {
+      "love": "深情，但命运总让他晚一步。",
+      "authority": "尊重秩序，但一旦不公就会硬扛。",
+      "friends": "极重义气，可以替别人承担最重的后果。",
+      "enemies": "不滥杀，但决断时极其干脆。"
+    },
+    "timeline": [
+      {
+        "title": "丐帮帮主",
+        "summary": "站在人生高点。"
+      },
+      {
+        "title": "身世揭开",
+        "summary": "归属崩裂。"
+      },
+      {
+        "title": "多重误解",
+        "summary": "不断失去与承受。"
+      },
+      {
+        "title": "以死止战",
+        "summary": "命运收束。"
+      }
+    ],
+    "workSlugs": [
+      "demi-gods-and-semi-devils"
+    ],
+    "creatorSlugs": [
+      "jin-yong"
+    ],
+    "songSlugs": [
+      "qiao-feng-theme-v1"
+    ],
+    "themeSlugs": [
+      "tragic",
+      "guardians"
+    ],
+    "similarCharacterSlugs": [
+      "sun-wu-kong",
+      "cao-cao"
+    ]
+  },
+  {
+    "id": "char-cao-cao",
+    "slug": "cao-cao",
+    "name": "曹操",
+    "aliases": [],
+    "characterTypeCode": "historical",
+    "subtype": "historical_figure",
+    "gender": "male",
+    "regionCode": "china",
+    "culturalRegionCode": "ancient_china_history",
+    "eraText": "东汉末年",
+    "summary": "乱世中的政治家、军事家与诗人，兼具建序者与争议者双重形象。",
+    "coverUrl": "/assets/images/characters/cao-cao.webp",
+    "oneLineDefinition": "他不是简单的奸雄，而是把成事与掌控看得高于名声的人。",
+    "coreIdentity": "在乱世中重建秩序的现实主义建序者",
+    "coreFear": "失控、被动、功败垂成",
+    "coreConflict": "雄才大略与道德争议并存",
+    "primaryMotivation": "掌控、成事、建立秩序",
+    "primaryTheme": "权谋者",
+    "emotionalTone": "冷峻、豪烈、疑惧",
+    "emotionalTemperature": "high",
+    "psychologicalWound": "长期在乱世高压中形成强控制与高疑心。",
+    "fateArc": "在群雄并起中扩张力量，背负骂名，也奠定新秩序雏形。",
+    "endingState": "未竟统一，却留下压倒性的时代印记。",
+    "surfaceTraits": [
+      "果决",
+      "强势",
+      "机变"
+    ],
+    "deepTraits": [
+      "高控制欲",
+      "现实主义",
+      "高警惕"
+    ],
+    "dominantEmotions": [
+      "雄心",
+      "警惕",
+      "压迫感"
+    ],
+    "suppressedEmotions": [
+      "脆弱",
+      "疲惫"
+    ],
+    "valuesTags": [
+      "结果",
+      "秩序",
+      "能力"
+    ],
+    "symbolicImages": [
+      "夜风",
+      "铁骑",
+      "酒杯",
+      "旌旗"
+    ],
+    "colors": [
+      {
+        "name": "玄黑",
+        "hex": "#161A20"
+      },
+      {
+        "name": "铜金",
+        "hex": "#8C6B3D"
+      },
+      {
+        "name": "暗红",
+        "hex": "#6E2F2F"
+      }
+    ],
+    "elements": [
+      "风",
+      "火"
+    ],
+    "soundscapeKeywords": [
+      "战鼓",
+      "马蹄",
+      "低沉号角"
+    ],
+    "relationshipProfile": {
+      "love": "感情从不居于首位。",
+      "authority": "他自己就是秩序中心。",
+      "friends": "欣赏有才者，但难完全放心。",
+      "enemies": "会尊重强敌，但更愿彻底清除风险。"
+    },
+    "timeline": [
+      {
+        "title": "挟天子以令诸侯",
+        "summary": "取得政治正统与战略主动。"
+      },
+      {
+        "title": "官渡之战",
+        "summary": "以少胜多奠定北方优势。"
+      },
+      {
+        "title": "统一北方",
+        "summary": "成为最强力量中心。"
+      },
+      {
+        "title": "赤壁失利",
+        "summary": "统一中国的路径被改写。"
+      }
+    ],
+    "workSlugs": [
+      "records-of-the-three-kingdoms"
+    ],
+    "creatorSlugs": [
+      "chen-shou"
+    ],
+    "songSlugs": [
+      "cao-cao-theme-v1"
+    ],
+    "themeSlugs": [
+      "schemers",
+      "fate-bound"
+    ],
+    "similarCharacterSlugs": [
+      "zhuge-liang",
+      "michael-corleone"
+    ]
+  },
+  {
+    "id": "char-zhuge-liang",
+    "slug": "zhuge-liang",
+    "name": "诸葛亮",
+    "aliases": [],
+    "characterTypeCode": "historical",
+    "subtype": "historical_figure",
+    "gender": "male",
+    "regionCode": "china",
+    "culturalRegionCode": "ancient_china_history",
+    "eraText": "三国时期",
+    "summary": "蜀汉丞相，以忠诚、智略与过度承担著称。",
+    "coverUrl": "/assets/images/characters/zhuge-liang.webp",
+    "oneLineDefinition": "他不是神机妙算的符号，他是把责任扛到极致的人。",
+    "coreIdentity": "以责任和秩序维系理想的承担者",
+    "coreFear": "理想崩塌、辜负托付",
+    "coreConflict": "有限现实与过高责任之间的长期拉扯",
+    "primaryMotivation": "守护理想政权与完成托付",
+    "primaryTheme": "守护者",
+    "emotionalTone": "克制、沉静、孤独",
+    "emotionalTemperature": "medium",
+    "psychologicalWound": "理想与现实长期不对等，使他始终活在未完成感中。",
+    "fateArc": "不断北伐，不断承担，直到生命先于事业耗尽。",
+    "endingState": "鞠躬尽瘁，留下巨大未竟感。",
+    "surfaceTraits": [
+      "稳重",
+      "理性",
+      "克制"
+    ],
+    "deepTraits": [
+      "责任感极强",
+      "自我消耗",
+      "高标准"
+    ],
+    "dominantEmotions": [
+      "责任",
+      "清醒",
+      "孤独"
+    ],
+    "suppressedEmotions": [
+      "脆弱",
+      "退意"
+    ],
+    "valuesTags": [
+      "忠诚",
+      "秩序",
+      "托付"
+    ],
+    "symbolicImages": [
+      "羽扇",
+      "孤灯",
+      "军帐",
+      "秋风"
+    ],
+    "colors": [
+      {
+        "name": "青",
+        "hex": "#5F7483"
+      },
+      {
+        "name": "白",
+        "hex": "#D6DCE2"
+      },
+      {
+        "name": "墨",
+        "hex": "#232933"
+      }
+    ],
+    "elements": [
+      "风",
+      "木"
+    ],
+    "soundscapeKeywords": [
+      "风声",
+      "古琴",
+      "军帐低语"
+    ],
+    "relationshipProfile": {
+      "love": "私人情感被长期置后。",
+      "authority": "服务于合法秩序，而非个人欲望。",
+      "friends": "重承诺、重托付。",
+      "enemies": "尊重对手，但不会放弃原则。"
+    },
+    "timeline": [
+      {
+        "title": "隆中对",
+        "summary": "提出战略格局。"
+      },
+      {
+        "title": "辅佐刘备",
+        "summary": "进入政治核心。"
+      },
+      {
+        "title": "托孤",
+        "summary": "责任达到顶点。"
+      },
+      {
+        "title": "六出祁山",
+        "summary": "在现实限制中反复推进。"
+      }
+    ],
+    "workSlugs": [
+      "records-of-the-three-kingdoms"
+    ],
+    "creatorSlugs": [
+      "chen-shou"
+    ],
+    "songSlugs": [
+      "zhuge-liang-theme-v1"
+    ],
+    "themeSlugs": [
+      "guardians",
+      "melancholic"
+    ],
+    "similarCharacterSlugs": [
+      "qiao-feng",
+      "rei-ayanami"
+    ]
+  },
+  {
+    "id": "char-wu-ze-tian",
+    "slug": "wu-ze-tian",
+    "name": "武则天",
+    "aliases": [],
+    "characterTypeCode": "historical",
+    "subtype": "historical_figure",
+    "gender": "female",
+    "regionCode": "china",
+    "culturalRegionCode": "ancient_china_history",
+    "eraText": "唐代",
+    "summary": "中国历史上唯一的正统女皇帝，兼具权力意志与制度手腕。",
+    "coverUrl": "/assets/images/characters/wu-ze-tian.webp",
+    "oneLineDefinition": "她不是只靠狠，她是把权力逻辑学到了极致的人。",
+    "coreIdentity": "在男性秩序中强行改写规则的权力操盘者",
+    "coreFear": "失去控制权、再次被定义为附属者",
+    "coreConflict": "自我证明与权力代价之间的冲突",
+    "primaryMotivation": "权力、掌控、改写位置",
+    "primaryTheme": "权谋者",
+    "emotionalTone": "冷硬、清醒、锋利",
+    "emotionalTemperature": "high",
+    "psychologicalWound": "长期处于被凝视、被排斥的权力结构中。",
+    "fateArc": "从后宫进入权力中心，最终把自己推上秩序顶端。",
+    "endingState": "以极高代价完成自我登顶。",
+    "surfaceTraits": [
+      "强势",
+      "冷静",
+      "凌厉"
+    ],
+    "deepTraits": [
+      "高掌控欲",
+      "高战略性",
+      "极强自我证明"
+    ],
+    "dominantEmotions": [
+      "掌控",
+      "野心",
+      "警觉"
+    ],
+    "suppressedEmotions": [
+      "脆弱",
+      "恐惧"
+    ],
+    "valuesTags": [
+      "权力",
+      "位置",
+      "效率"
+    ],
+    "symbolicImages": [
+      "金殿",
+      "凤冠",
+      "夜灯",
+      "诏书"
+    ],
+    "colors": [
+      {
+        "name": "金",
+        "hex": "#B9914A"
+      },
+      {
+        "name": "深红",
+        "hex": "#6B2830"
+      },
+      {
+        "name": "黑",
+        "hex": "#1B1F25"
+      }
+    ],
+    "elements": [
+      "火",
+      "金"
+    ],
+    "soundscapeKeywords": [
+      "钟鼓",
+      "殿前回响",
+      "衣袍摩擦"
+    ],
+    "relationshipProfile": {
+      "love": "感情会被权力逻辑改写。",
+      "authority": "她要成为权威，而不是依附权威。",
+      "friends": "需要同盟，但不轻信同盟。",
+      "enemies": "宁可先发制人。"
+    },
+    "timeline": [
+      {
+        "title": "入宫",
+        "summary": "进入权力边缘。"
+      },
+      {
+        "title": "后宫上升",
+        "summary": "学会权力运作。"
+      },
+      {
+        "title": "临朝称制",
+        "summary": "从幕后转到台前。"
+      },
+      {
+        "title": "登基称帝",
+        "summary": "直接改写秩序。"
+      }
+    ],
+    "workSlugs": [
+      "wu-mei-niang-legend"
+    ],
+    "creatorSlugs": [
+      "zheng-xiaolong"
+    ],
+    "songSlugs": [
+      "wu-ze-tian-theme-v1"
+    ],
+    "themeSlugs": [
+      "schemers",
+      "fiery"
+    ],
+    "similarCharacterSlugs": [
+      "zhen-huan",
+      "arthur-fleck"
+    ]
+  },
+  {
+    "id": "char-napoleon-bonaparte",
+    "slug": "napoleon-bonaparte",
+    "name": "拿破仑",
+    "aliases": [],
+    "characterTypeCode": "historical",
+    "subtype": "historical_figure",
+    "gender": "male",
+    "regionCode": "france",
+    "culturalRegionCode": "western_history",
+    "eraText": "近代欧洲",
+    "summary": "法国政治家、军事家，以野心、才能与历史性扩张著称。",
+    "coverUrl": "/assets/images/characters/napoleon-bonaparte.webp",
+    "oneLineDefinition": "他不是只想赢一场战役，他想把自己写进历史的中心。",
+    "coreIdentity": "把个人意志扩张成时代秩序的征服者",
+    "coreFear": "平庸、被遗忘、无法主导历史",
+    "coreConflict": "个人天才与历史反噬之间的冲突",
+    "primaryMotivation": "超越、控制与历史留名",
+    "primaryTheme": "权谋者",
+    "emotionalTone": "高燃、扩张、紧迫",
+    "emotionalTemperature": "high",
+    "psychologicalWound": "出身边缘与极强自我证明欲交织。",
+    "fateArc": "一路攀升到权力巅峰，又被自己的扩张欲反噬。",
+    "endingState": "曾改变欧洲，也被欧洲共同压回。",
+    "surfaceTraits": [
+      "自信",
+      "高效",
+      "锐利"
+    ],
+    "deepTraits": [
+      "强扩张欲",
+      "极高成就动机",
+      "高控制"
+    ],
+    "dominantEmotions": [
+      "雄心",
+      "紧迫感",
+      "意志"
+    ],
+    "suppressedEmotions": [
+      "羞耻",
+      "衰败恐惧"
+    ],
+    "valuesTags": [
+      "胜利",
+      "效率",
+      "历史地位"
+    ],
+    "symbolicImages": [
+      "战马",
+      "军旗",
+      "雪地",
+      "王冠"
+    ],
+    "colors": [
+      {
+        "name": "海军蓝",
+        "hex": "#31445B"
+      },
+      {
+        "name": "金",
+        "hex": "#C0A15C"
+      },
+      {
+        "name": "白",
+        "hex": "#E1E3E7"
+      }
+    ],
+    "elements": [
+      "火",
+      "风"
+    ],
+    "soundscapeKeywords": [
+      "军乐",
+      "炮火",
+      "马蹄"
+    ],
+    "relationshipProfile": {
+      "love": "私人关系难超过事业。",
+      "authority": "他要成为权威本身。",
+      "friends": "更看重能力与忠诚。",
+      "enemies": "会把敌人视作必须突破的历史障碍。"
+    },
+    "timeline": [
+      {
+        "title": "意大利战役",
+        "summary": "迅速证明军事能力。"
+      },
+      {
+        "title": "政变上台",
+        "summary": "进入权力核心。"
+      },
+      {
+        "title": "称帝",
+        "summary": "把个人意志制度化。"
+      },
+      {
+        "title": "滑铁卢",
+        "summary": "扩张逻辑走向终点。"
+      }
+    ],
+    "workSlugs": [
+      "napoleonic-history"
+    ],
+    "creatorSlugs": [
+      "napoleon-author"
+    ],
+    "songSlugs": [
+      "napoleon-theme-v1"
+    ],
+    "themeSlugs": [
+      "schemers",
+      "fiery"
+    ],
+    "similarCharacterSlugs": [
+      "cao-cao",
+      "michael-corleone"
+    ]
+  },
+  {
+    "id": "char-zhen-huan",
+    "slug": "zhen-huan",
+    "name": "甄嬛",
+    "aliases": [],
+    "characterTypeCode": "film_tv",
+    "subtype": "tv_character",
+    "gender": "female",
+    "regionCode": "mainland_china",
+    "culturalRegionCode": "mainland_china_film_tv",
+    "eraText": "清宫剧语境",
+    "summary": "从天真少女被现实逼成清醒权谋者的经典影视人物。",
+    "coverUrl": "/assets/images/characters/zhen-huan.webp",
+    "oneLineDefinition": "她不是天生会赢，她是被现实一步步训练成不会再输的人。",
+    "coreIdentity": "在后宫秩序中被迫成长的清醒生存者",
+    "coreFear": "失去自我、失去孩子、再次被动",
+    "coreConflict": "真情愿望与生存逻辑之间的冲突",
+    "primaryMotivation": "活下去、保护所爱、夺回主动权",
+    "primaryTheme": "悲剧人格",
+    "emotionalTone": "冷感、隐忍、后期锋利",
+    "emotionalTemperature": "medium",
+    "psychologicalWound": "爱情与信任被制度性碾碎。",
+    "fateArc": "从被动进入权力局，到成为能反过来操盘的人。",
+    "endingState": "赢得位置，却失去最初的自己。",
+    "surfaceTraits": [
+      "聪明",
+      "克制",
+      "细腻"
+    ],
+    "deepTraits": [
+      "防御增强",
+      "成长型权谋",
+      "高警觉"
+    ],
+    "dominantEmotions": [
+      "隐忍",
+      "清醒",
+      "失望"
+    ],
+    "suppressedEmotions": [
+      "天真",
+      "依赖"
+    ],
+    "valuesTags": [
+      "自保",
+      "尊严",
+      "保护"
+    ],
+    "symbolicImages": [
+      "宫灯",
+      "红墙",
+      "雪地",
+      "花影"
+    ],
+    "colors": [
+      {
+        "name": "暗金",
+        "hex": "#A28A58"
+      },
+      {
+        "name": "墨绿",
+        "hex": "#44514E"
+      },
+      {
+        "name": "冷白",
+        "hex": "#D9DDE2"
+      }
+    ],
+    "elements": [
+      "雪",
+      "花"
+    ],
+    "soundscapeKeywords": [
+      "宫铃",
+      "脚步声",
+      "风雪"
+    ],
+    "relationshipProfile": {
+      "love": "从深信到彻底失望。",
+      "authority": "表面服从，内里不断学习如何反制。",
+      "friends": "会珍惜，但也越来越谨慎。",
+      "enemies": "从防御转向布局。"
+    },
+    "timeline": [
+      {
+        "title": "入宫",
+        "summary": "带着情感幻想进入制度世界。"
+      },
+      {
+        "title": "失宠与流放",
+        "summary": "第一次被现实彻底教育。"
+      },
+      {
+        "title": "重回后宫",
+        "summary": "不再用同样方式活。"
+      },
+      {
+        "title": "成为太后",
+        "summary": "赢下权力，但代价巨大。"
+      }
+    ],
+    "workSlugs": [
+      "legend-of-zhen-huan"
+    ],
+    "creatorSlugs": [
+      "zheng-xiaolong"
+    ],
+    "songSlugs": [
+      "zhen-huan-theme-v1"
+    ],
+    "themeSlugs": [
+      "tragic",
+      "self-divided"
+    ],
+    "similarCharacterSlugs": [
+      "wu-ze-tian",
+      "lin-daiyu"
+    ]
+  },
+  {
+    "id": "char-jiang-yuyan",
+    "slug": "jiang-yuyan",
+    "name": "江玉燕",
+    "aliases": [],
+    "characterTypeCode": "film_tv",
+    "subtype": "tv_character",
+    "gender": "female",
+    "regionCode": "hongkong_china",
+    "culturalRegionCode": "hongkong_film_tv",
+    "eraText": "武侠剧语境",
+    "summary": "极端匮乏与情感执念交织后走向毁灭的影视人物。",
+    "coverUrl": "/assets/images/characters/jiang-yuyan.webp",
+    "oneLineDefinition": "她不是天生恶，她是把被压抑的一切都走到了极端。",
+    "coreIdentity": "在匮乏与屈辱中扭曲成长的极端占有者",
+    "coreFear": "再次被抛下、再次一无所有",
+    "coreConflict": "渴望被爱与以毁灭方式求爱之间的冲突",
+    "primaryMotivation": "占有、报复、证明自己不再低贱",
+    "primaryTheme": "悲剧人格",
+    "emotionalTone": "阴冷、偏执、浓烈",
+    "emotionalTemperature": "high",
+    "psychologicalWound": "长期被忽视、被羞辱、被剥夺位置。",
+    "fateArc": "从弱者走向极端强者，再因极端而毁灭。",
+    "endingState": "赢到最后，却只剩彻底空洞。",
+    "surfaceTraits": [
+      "柔弱",
+      "聪明",
+      "隐忍"
+    ],
+    "deepTraits": [
+      "偏执",
+      "占有欲极强",
+      "报复性强"
+    ],
+    "dominantEmotions": [
+      "恨",
+      "不甘",
+      "占有"
+    ],
+    "suppressedEmotions": [
+      "脆弱",
+      "渴爱"
+    ],
+    "valuesTags": [
+      "位置",
+      "选择权",
+      "不再被欺辱"
+    ],
+    "symbolicImages": [
+      "红衣",
+      "冷夜",
+      "毒药",
+      "孤影"
+    ],
+    "colors": [
+      {
+        "name": "深红",
+        "hex": "#6C1F2A"
+      },
+      {
+        "name": "黑",
+        "hex": "#171A1F"
+      },
+      {
+        "name": "冷白",
+        "hex": "#D8DADF"
+      }
+    ],
+    "elements": [
+      "夜",
+      "毒"
+    ],
+    "soundscapeKeywords": [
+      "低笑",
+      "夜风",
+      "碎步"
+    ],
+    "relationshipProfile": {
+      "love": "把爱和占有混在一起。",
+      "authority": "对压迫她的秩序怀有极深报复心。",
+      "friends": "极少真正信任。",
+      "enemies": "宁可全毁，也不愿再输。"
+    },
+    "timeline": [
+      {
+        "title": "长期被压抑",
+        "summary": "在底层位置里默默积累不甘。"
+      },
+      {
+        "title": "掌握力量",
+        "summary": "开始改写自己的处境。"
+      },
+      {
+        "title": "全面清算",
+        "summary": "把所有羞辱与伤害反打回去。"
+      },
+      {
+        "title": "走向毁灭",
+        "summary": "极端逻辑吞掉一切。"
+      }
+    ],
+    "workSlugs": [
+      "the-proud-twins-2005"
+    ],
+    "creatorSlugs": [
+      "wang-jing"
+    ],
+    "songSlugs": [
+      "jiang-yuyan-theme-v1"
+    ],
+    "themeSlugs": [
+      "tragic",
+      "fiery"
+    ],
+    "similarCharacterSlugs": [
+      "arthur-fleck",
+      "wu-ze-tian"
+    ]
+  },
+  {
+    "id": "char-michael-corleone",
+    "slug": "michael-corleone",
+    "name": "Michael Corleone",
+    "aliases": [],
+    "characterTypeCode": "film_tv",
+    "subtype": "film_character",
+    "gender": "male",
+    "regionCode": "usa",
+    "culturalRegionCode": "western_film_tv",
+    "eraText": "黑帮电影语境",
+    "summary": "从不愿卷入家族黑暗，到主动成为家族核心掌权者。",
+    "coverUrl": "/assets/images/characters/michael-corleone.webp",
+    "oneLineDefinition": "他不是一步变黑的，他是在一次次必要选择里，把自己慢慢变成了最冷的人。",
+    "coreIdentity": "以理性和控制替代情感的家族继承者",
+    "coreFear": "家族失控、弱点暴露、自己不够强",
+    "coreConflict": "家族责任与个人良知之间的冲突",
+    "primaryMotivation": "控制局势、保护家族、维持权力",
+    "primaryTheme": "权谋者",
+    "emotionalTone": "冷、沉、压抑",
+    "emotionalTemperature": "medium",
+    "psychologicalWound": "战争经验与家族暴力逻辑共同塑形。",
+    "fateArc": "越想保护家族，越把自己变成家族逻辑的最终代表。",
+    "endingState": "掌握一切，也失去一切关系温度。",
+    "surfaceTraits": [
+      "克制",
+      "理性",
+      "沉稳"
+    ],
+    "deepTraits": [
+      "控制欲强",
+      "情感封闭",
+      "权力化思维"
+    ],
+    "dominantEmotions": [
+      "压抑",
+      "冷静",
+      "戒备"
+    ],
+    "suppressedEmotions": [
+      "柔软",
+      "迟疑"
+    ],
+    "valuesTags": [
+      "家族",
+      "秩序",
+      "掌控"
+    ],
+    "symbolicImages": [
+      "西装",
+      "门缝",
+      "暗灯",
+      "餐桌"
+    ],
+    "colors": [
+      {
+        "name": "黑",
+        "hex": "#13161C"
+      },
+      {
+        "name": "酒红",
+        "hex": "#5B2328"
+      },
+      {
+        "name": "烟灰",
+        "hex": "#7A8088"
+      }
+    ],
+    "elements": [
+      "烟",
+      "夜"
+    ],
+    "soundscapeKeywords": [
+      "低语",
+      "门轴",
+      "酒杯轻响"
+    ],
+    "relationshipProfile": {
+      "love": "会爱，但最终总让权力压过爱。",
+      "authority": "他最终成为权威本身。",
+      "friends": "极度筛选，信任稀缺。",
+      "enemies": "先判断，再彻底处理。"
+    },
+    "timeline": [
+      {
+        "title": "拒绝家族道路",
+        "summary": "试图保持距离。"
+      },
+      {
+        "title": "父亲遇刺",
+        "summary": "被迫进入核心。"
+      },
+      {
+        "title": "接掌家族",
+        "summary": "以冷静和暴力重组秩序。"
+      },
+      {
+        "title": "彻底孤独",
+        "summary": "站上高位，也站进黑暗。"
+      }
+    ],
+    "workSlugs": [
+      "the-godfather"
+    ],
+    "creatorSlugs": [
+      "francis-ford-coppola"
+    ],
+    "songSlugs": [
+      "michael-corleone-theme-v1"
+    ],
+    "themeSlugs": [
+      "schemers",
+      "melancholic"
+    ],
+    "similarCharacterSlugs": [
+      "cao-cao",
+      "napoleon-bonaparte"
+    ]
+  },
+  {
+    "id": "char-arthur-fleck",
+    "slug": "arthur-fleck",
+    "name": "Arthur Fleck",
+    "aliases": [],
+    "characterTypeCode": "film_tv",
+    "subtype": "film_character",
+    "gender": "male",
+    "regionCode": "usa",
+    "culturalRegionCode": "western_film_tv",
+    "eraText": "都市心理电影语境",
+    "summary": "在被社会长期忽视和羞辱后，逐渐滑向极端表演性暴力的人物。",
+    "coverUrl": "/assets/images/characters/arthur-fleck.webp",
+    "oneLineDefinition": "他不是突然疯掉的，他是被一次次看不见、笑不出的生活慢慢推过去的。",
+    "coreIdentity": "被世界抛下后通过表演重塑自我存在的人",
+    "coreFear": "彻底无声、彻底无人看见",
+    "coreConflict": "渴望被认同与以破坏方式获得注视之间的冲突",
+    "primaryMotivation": "被看见、被承认存在",
+    "primaryTheme": "自我撕裂者",
+    "emotionalTone": "压抑、扭曲、发冷",
+    "emotionalTemperature": "high",
+    "psychologicalWound": "长期被羞辱、忽视和缺乏稳定承托。",
+    "fateArc": "从社会边缘人一步步走向符号化的失控形象。",
+    "endingState": "成为别人看见的对象，却不再能回到普通人生活。",
+    "surfaceTraits": [
+      "怯弱",
+      "局促",
+      "怪异"
+    ],
+    "deepTraits": [
+      "高度羞耻",
+      "极度缺爱",
+      "边缘化怒意"
+    ],
+    "dominantEmotions": [
+      "羞辱",
+      "孤独",
+      "愤怒"
+    ],
+    "suppressedEmotions": [
+      "温柔",
+      "求助"
+    ],
+    "valuesTags": [
+      "存在感",
+      "尊严"
+    ],
+    "symbolicImages": [
+      "小丑妆",
+      "地铁",
+      "楼梯",
+      "霓虹"
+    ],
+    "colors": [
+      {
+        "name": "病绿",
+        "hex": "#65705E"
+      },
+      {
+        "name": "暗红",
+        "hex": "#7A2E32"
+      },
+      {
+        "name": "灰蓝",
+        "hex": "#59636E"
+      }
+    ],
+    "elements": [
+      "夜",
+      "烟"
+    ],
+    "soundscapeKeywords": [
+      "空笑",
+      "地铁声",
+      "呼吸声"
+    ],
+    "relationshipProfile": {
+      "love": "会把一点善意放大成救命稻草。",
+      "authority": "对冷漠系统充满敌意。",
+      "friends": "极度匮乏。",
+      "enemies": "最终把整个世界都感受成敌意来源。"
+    },
+    "timeline": [
+      {
+        "title": "长期受辱",
+        "summary": "生活持续挤压他的边界。"
+      },
+      {
+        "title": "关键崩点",
+        "summary": "多个现实打击叠加。"
+      },
+      {
+        "title": "转化为小丑",
+        "summary": "通过表演性身份反过来占据视线。"
+      },
+      {
+        "title": "失控扩散",
+        "summary": "个体崩塌与社会投射叠合。"
+      }
+    ],
+    "workSlugs": [
+      "joker-2019"
+    ],
+    "creatorSlugs": [
+      "todd-phillips"
+    ],
+    "songSlugs": [
+      "arthur-fleck-theme-v1"
+    ],
+    "themeSlugs": [
+      "self-divided",
+      "tragic"
+    ],
+    "similarCharacterSlugs": [
+      "jiang-yuyan",
+      "raskolnikov"
+    ]
+  },
+  {
+    "id": "char-naruto-uzumaki",
+    "slug": "naruto-uzumaki",
+    "name": "漩涡鸣人",
+    "aliases": [],
+    "characterTypeCode": "anime",
+    "subtype": "anime_character",
+    "gender": "male",
+    "regionCode": "japan",
+    "culturalRegionCode": "japanese_anime",
+    "eraText": "少年热血动画语境",
+    "summary": "从被排斥的孤儿成长为能够被所有人看见与承认的人。",
+    "coverUrl": "/assets/images/characters/naruto-uzumaki.webp",
+    "oneLineDefinition": "他不是只会喊梦想，他是在长期孤独里也没放弃连接别人的人。",
+    "coreIdentity": "用乐观与坚持对抗孤独的人",
+    "coreFear": "永远不被承认、永远孤身一人",
+    "coreConflict": "渴望被认同与现实长期拒绝之间的冲突",
+    "primaryMotivation": "被认可、守护伙伴、证明自己",
+    "primaryTheme": "成长型人物",
+    "emotionalTone": "热血、明亮、倔强",
+    "emotionalTemperature": "high",
+    "psychologicalWound": "童年孤立与长期被看作异类。",
+    "fateArc": "不断受挫又不断前进，最终把孤独转化成连接他人的力量。",
+    "endingState": "被世界承认，也真正拥有归属。",
+    "surfaceTraits": [
+      "热血",
+      "乐观",
+      "冲动"
+    ],
+    "deepTraits": [
+      "极强韧性",
+      "高共情",
+      "害怕被抛下"
+    ],
+    "dominantEmotions": [
+      "兴奋",
+      "倔强",
+      "渴望"
+    ],
+    "suppressedEmotions": [
+      "孤独",
+      "恐惧"
+    ],
+    "valuesTags": [
+      "伙伴",
+      "承认",
+      "不放弃"
+    ],
+    "symbolicImages": [
+      "螺旋纹",
+      "夕阳",
+      "护额",
+      "风"
+    ],
+    "colors": [
+      {
+        "name": "橙",
+        "hex": "#D88332"
+      },
+      {
+        "name": "蓝",
+        "hex": "#4D6D97"
+      },
+      {
+        "name": "黑",
+        "hex": "#15181D"
+      }
+    ],
+    "elements": [
+      "风",
+      "火"
+    ],
+    "soundscapeKeywords": [
+      "奔跑",
+      "呐喊",
+      "风声"
+    ],
+    "relationshipProfile": {
+      "love": "真诚直接。",
+      "authority": "一开始抗拒，后来学会理解与承担。",
+      "friends": "视为最重要的力量来源。",
+      "enemies": "会试图理解对方的伤口。"
+    },
+    "timeline": [
+      {
+        "title": "被孤立成长",
+        "summary": "长期在村中被排斥。"
+      },
+      {
+        "title": "成为忍者",
+        "summary": "终于有机会证明自己。"
+      },
+      {
+        "title": "与佐助纠缠",
+        "summary": "羁绊成为成长核心。"
+      },
+      {
+        "title": "成为火影",
+        "summary": "完成被承认与守护世界的双重愿望。"
+      }
+    ],
+    "workSlugs": [
+      "naruto"
+    ],
+    "creatorSlugs": [
+      "masashi-kishimoto"
+    ],
+    "songSlugs": [
+      "naruto-theme-v1"
+    ],
+    "themeSlugs": [
+      "fiery",
+      "growth-arc"
+    ],
+    "similarCharacterSlugs": [
+      "sun-wu-kong",
+      "monkey-d-luffy"
+    ]
+  },
+  {
+    "id": "char-sasuke-uchiha",
+    "slug": "sasuke-uchiha",
+    "name": "宇智波佐助",
+    "aliases": [],
+    "characterTypeCode": "anime",
+    "subtype": "anime_character",
+    "gender": "male",
+    "regionCode": "japan",
+    "culturalRegionCode": "japanese_anime",
+    "eraText": "少年热血动画语境",
+    "summary": "在复仇、孤独与自我定义中不断偏离又不断寻找出口的人物。",
+    "coverUrl": "/assets/images/characters/sasuke-uchiha.webp",
+    "oneLineDefinition": "他不是冷，他是把所有软弱都压成了复仇的形状。",
+    "coreIdentity": "被创伤塑造成复仇路径的孤独者",
+    "coreFear": "再次失去、再次无力、再次被情感拖住",
+    "coreConflict": "复仇执念与残存羁绊之间的冲突",
+    "primaryMotivation": "复仇、证明、自我定义",
+    "primaryTheme": "自我撕裂者",
+    "emotionalTone": "冷、孤、压抑",
+    "emotionalTemperature": "medium",
+    "psychologicalWound": "家族灭门创伤彻底改写自我结构。",
+    "fateArc": "越走越远，直到不得不重新定义自己到底是谁。",
+    "endingState": "仍保留孤独感，但开始愿意回到连接之中。",
+    "surfaceTraits": [
+      "冷静",
+      "锐利",
+      "克制"
+    ],
+    "deepTraits": [
+      "创伤驱动",
+      "不信任",
+      "强自我封闭"
+    ],
+    "dominantEmotions": [
+      "恨",
+      "冷静",
+      "执拗"
+    ],
+    "suppressedEmotions": [
+      "柔软",
+      "依赖"
+    ],
+    "valuesTags": [
+      "力量",
+      "真相",
+      "选择权"
+    ],
+    "symbolicImages": [
+      "雷光",
+      "乌鸦",
+      "黑夜",
+      "刀锋"
+    ],
+    "colors": [
+      {
+        "name": "深蓝",
+        "hex": "#344764"
+      },
+      {
+        "name": "黑",
+        "hex": "#12151B"
+      },
+      {
+        "name": "紫",
+        "hex": "#6B4E8B"
+      }
+    ],
+    "elements": [
+      "雷",
+      "夜"
+    ],
+    "soundscapeKeywords": [
+      "电流",
+      "疾风",
+      "刀鸣"
+    ],
+    "relationshipProfile": {
+      "love": "不擅处理亲密。",
+      "authority": "不再轻信任何高位叙事。",
+      "friends": "羁绊越深，越让他害怕。",
+      "enemies": "常把敌人也当成通往答案的路径。"
+    },
+    "timeline": [
+      {
+        "title": "家族覆灭",
+        "summary": "复仇成为唯一方向。"
+      },
+      {
+        "title": "与鸣人形成羁绊",
+        "summary": "第一次有了可能改变命运的人。"
+      },
+      {
+        "title": "不断偏离",
+        "summary": "为复仇持续切断关系。"
+      },
+      {
+        "title": "重新选择",
+        "summary": "承认羁绊仍然存在。"
+      }
+    ],
+    "workSlugs": [
+      "naruto"
+    ],
+    "creatorSlugs": [
+      "masashi-kishimoto"
+    ],
+    "songSlugs": [
+      "sasuke-theme-v1"
+    ],
+    "themeSlugs": [
+      "self-divided",
+      "melancholic"
+    ],
+    "similarCharacterSlugs": [
+      "hamlet-character",
+      "eren-yeager"
+    ]
+  },
+  {
+    "id": "char-monkey-d-luffy",
+    "slug": "monkey-d-luffy",
+    "name": "路飞",
+    "aliases": [],
+    "characterTypeCode": "anime",
+    "subtype": "anime_character",
+    "gender": "male",
+    "regionCode": "japan",
+    "culturalRegionCode": "japanese_anime",
+    "eraText": "冒险动画语境",
+    "summary": "以绝对自由和伙伴信念驱动前进的冒险人物。",
+    "coverUrl": "/assets/images/characters/monkey-d-luffy.webp",
+    "oneLineDefinition": "他不是简单乐天，他是把自由当成生命本身的人。",
+    "coreIdentity": "用自由定义世界的冒险者",
+    "coreFear": "伙伴受伤、自由被剥夺",
+    "coreConflict": "纯粹自由愿望与残酷世界规则之间的冲突",
+    "primaryMotivation": "自由、梦想、守护伙伴",
+    "primaryTheme": "反叛者",
+    "emotionalTone": "热烈、明亮、无畏",
+    "emotionalTemperature": "high",
+    "psychologicalWound": "童年失去亲近者让他更珍视伙伴与承诺。",
+    "fateArc": "不断穿越更残酷的世界，却始终保住最纯粹的核心。",
+    "endingState": "尚未结束，但已经成为自由意志的象征。",
+    "surfaceTraits": [
+      "直率",
+      "热血",
+      "乐天"
+    ],
+    "deepTraits": [
+      "意志极强",
+      "价值稳定",
+      "极重伙伴"
+    ],
+    "dominantEmotions": [
+      "快乐",
+      "决心",
+      "愤怒"
+    ],
+    "suppressedEmotions": [
+      "悲伤"
+    ],
+    "valuesTags": [
+      "自由",
+      "伙伴",
+      "梦想"
+    ],
+    "symbolicImages": [
+      "草帽",
+      "大海",
+      "旗帜",
+      "阳光"
+    ],
+    "colors": [
+      {
+        "name": "红",
+        "hex": "#A53A33"
+      },
+      {
+        "name": "蓝",
+        "hex": "#365B83"
+      },
+      {
+        "name": "金",
+        "hex": "#C79A4E"
+      }
+    ],
+    "elements": [
+      "海",
+      "风"
+    ],
+    "soundscapeKeywords": [
+      "海浪",
+      "笑声",
+      "船帆"
+    ],
+    "relationshipProfile": {
+      "love": "更接近生命情义而非传统恋爱。",
+      "authority": "天然反抗压迫性权威。",
+      "friends": "伙伴高于一切。",
+      "enemies": "会用最直接方式打破压迫。"
+    },
+    "timeline": [
+      {
+        "title": "出海",
+        "summary": "把自由真正变成行动。"
+      },
+      {
+        "title": "伙伴集结",
+        "summary": "梦想开始有了共同体。"
+      },
+      {
+        "title": "世界变残酷",
+        "summary": "开始正面撞上巨大秩序。"
+      },
+      {
+        "title": "不断前进",
+        "summary": "每一次受挫都让意志更坚定。"
+      }
+    ],
+    "workSlugs": [
+      "one-piece"
+    ],
+    "creatorSlugs": [
+      "eiichiro-oda"
+    ],
+    "songSlugs": [
+      "luffy-theme-v1"
+    ],
+    "themeSlugs": [
+      "rebels",
+      "fiery"
+    ],
+    "similarCharacterSlugs": [
+      "sun-wu-kong",
+      "naruto-uzumaki"
+    ]
+  },
+  {
+    "id": "char-eren-yeager",
+    "slug": "eren-yeager",
+    "name": "艾伦",
+    "aliases": [],
+    "characterTypeCode": "anime",
+    "subtype": "anime_character",
+    "gender": "male",
+    "regionCode": "japan",
+    "culturalRegionCode": "japanese_anime",
+    "eraText": "黑暗奇幻动画语境",
+    "summary": "从渴望自由的少年走向被自由执念吞没的复杂人物。",
+    "coverUrl": "/assets/images/characters/eren-yeager.webp",
+    "oneLineDefinition": "他不是单纯黑化，他是把“自由”追到了连自己都无法回头的地方。",
+    "coreIdentity": "被自由执念推动到极端的人",
+    "coreFear": "被圈养、被决定命运、无法改变未来",
+    "coreConflict": "追求自由与制造巨大毁灭之间的冲突",
+    "primaryMotivation": "自由、突破牢笼、改变命运",
+    "primaryTheme": "宿命型人物",
+    "emotionalTone": "压抑、燃烧、决绝",
+    "emotionalTemperature": "high",
+    "psychologicalWound": "幼年遭遇巨大创伤，使自由变成近乎宗教性的目标。",
+    "fateArc": "从反抗命运到被自己所见未来推着前进。",
+    "endingState": "用极端方式冲撞命运，也被命运吞没。",
+    "surfaceTraits": [
+      "冲动",
+      "坚决",
+      "热烈"
+    ],
+    "deepTraits": [
+      "执念极强",
+      "高压抑",
+      "目的性极端"
+    ],
+    "dominantEmotions": [
+      "愤怒",
+      "决绝",
+      "悲怆"
+    ],
+    "suppressedEmotions": [
+      "柔软",
+      "后悔"
+    ],
+    "valuesTags": [
+      "自由",
+      "选择权"
+    ],
+    "symbolicImages": [
+      "高墙",
+      "鸟群",
+      "海面",
+      "血色夕阳"
+    ],
+    "colors": [
+      {
+        "name": "深绿",
+        "hex": "#49584B"
+      },
+      {
+        "name": "灰蓝",
+        "hex": "#68737E"
+      },
+      {
+        "name": "暗红",
+        "hex": "#6E3131"
+      }
+    ],
+    "elements": [
+      "风",
+      "土"
+    ],
+    "soundscapeKeywords": [
+      "轰鸣",
+      "风压",
+      "远处呼喊"
+    ],
+    "relationshipProfile": {
+      "love": "有深情，但很难留在私人层面。",
+      "authority": "对压迫性秩序有根本性敌意。",
+      "friends": "真正在意，却也会把朋友拉进更大的命运。",
+      "enemies": "会把敌我边界不断扩大。"
+    },
+    "timeline": [
+      {
+        "title": "墙内童年",
+        "summary": "自由成为最早的欲望。"
+      },
+      {
+        "title": "母亲之死",
+        "summary": "自由执念被创伤点燃。"
+      },
+      {
+        "title": "看见更大世界",
+        "summary": "敌我结构被改写。"
+      },
+      {
+        "title": "走向极端选择",
+        "summary": "自由逻辑吞没一切。"
+      }
+    ],
+    "workSlugs": [
+      "attack-on-titan"
+    ],
+    "creatorSlugs": [
+      "hajime-isayama"
+    ],
+    "songSlugs": [
+      "eren-theme-v1"
+    ],
+    "themeSlugs": [
+      "tragic",
+      "fate-bound"
+    ],
+    "similarCharacterSlugs": [
+      "sasuke-uchiha",
+      "arthur-fleck"
+    ]
+  },
+  {
+    "id": "char-rei-ayanami",
+    "slug": "rei-ayanami",
+    "name": "绫波丽",
+    "aliases": [],
+    "characterTypeCode": "anime",
+    "subtype": "anime_character",
+    "gender": "female",
+    "regionCode": "japan",
+    "culturalRegionCode": "japanese_anime",
+    "eraText": "科幻心理动画语境",
+    "summary": "极度安静、疏离却逐渐长出自我意识的经典人物。",
+    "coverUrl": "/assets/images/characters/rei-ayanami.webp",
+    "oneLineDefinition": "她不是没有感情，她是太晚才被允许感到自己也可以是“一个人”。",
+    "coreIdentity": "从被定义的存在中慢慢长出自我的人",
+    "coreFear": "自我不存在、关系是虚假的",
+    "coreConflict": "被制造的身份与想成为自己的愿望之间的冲突",
+    "primaryMotivation": "确认自我、理解连接",
+    "primaryTheme": "孤独型人物",
+    "emotionalTone": "安静、空白、淡痛",
+    "emotionalTemperature": "low",
+    "psychologicalWound": "从一开始就缺少稳定的主体感与自我归属。",
+    "fateArc": "从被安排的存在逐步发展出选择与情感。",
+    "endingState": "在消散感中留下自我痕迹。",
+    "surfaceTraits": [
+      "安静",
+      "克制",
+      "淡漠"
+    ],
+    "deepTraits": [
+      "主体感脆弱",
+      "高孤独",
+      "高观察性"
+    ],
+    "dominantEmotions": [
+      "空白感",
+      "安静",
+      "微弱温柔"
+    ],
+    "suppressedEmotions": [
+      "恐惧",
+      "依恋"
+    ],
+    "valuesTags": [
+      "真实",
+      "自我确认"
+    ],
+    "symbolicImages": [
+      "白色病房",
+      "水面",
+      "蓝光",
+      "绷带"
+    ],
+    "colors": [
+      {
+        "name": "冷白",
+        "hex": "#D9DDE2"
+      },
+      {
+        "name": "浅蓝",
+        "hex": "#8BA6C4"
+      },
+      {
+        "name": "灰",
+        "hex": "#7A8189"
+      }
+    ],
+    "elements": [
+      "水",
+      "雾"
+    ],
+    "soundscapeKeywords": [
+      "电子噪音",
+      "呼吸声",
+      "水波"
+    ],
+    "relationshipProfile": {
+      "love": "更像在学习如何回应他人的靠近。",
+      "authority": "长期被他人定义。",
+      "friends": "需要极长时间才会显出连接。",
+      "enemies": "并非敌意，而是与世界始终隔着一层膜。"
+    },
+    "timeline": [
+      {
+        "title": "作为工具被启动",
+        "summary": "从开始就不是普通人的起点。"
+      },
+      {
+        "title": "与真嗣接近",
+        "summary": "第一次在关系中感到细微变化。"
+      },
+      {
+        "title": "逐渐意识到自我",
+        "summary": "开始分辨自己不是纯粹替代物。"
+      },
+      {
+        "title": "留下痕迹",
+        "summary": "以极安静的方式确认存在。"
+      }
+    ],
+    "workSlugs": [
+      "neon-genesis-evangelion"
+    ],
+    "creatorSlugs": [
+      "hideaki-anno"
+    ],
+    "songSlugs": [
+      "rei-theme-v1"
+    ],
+    "themeSlugs": [
+      "melancholic",
+      "lonely"
+    ],
+    "similarCharacterSlugs": [
+      "lin-daiyu",
+      "zhuge-liang"
+    ]
+  },
+  {
+    "id": "char-light-yagami",
+    "slug": "light-yagami",
+    "name": "夜神月",
+    "aliases": [],
+    "characterTypeCode": "anime",
+    "subtype": "anime_character",
+    "gender": "male",
+    "regionCode": "japan",
+    "culturalRegionCode": "japanese_anime",
+    "eraText": "悬疑智斗动画语境",
+    "summary": "从天才优等生一步步滑向极端控制型人格的经典角色。",
+    "coverUrl": "/assets/images/characters/light-yagami.webp",
+    "oneLineDefinition": "他不是单纯想清除罪恶，他是逐渐把自己等同于正义本身的人。",
+    "coreIdentity": "把自己放到神的位置上的控制者",
+    "coreFear": "失控、失败、被看穿",
+    "coreConflict": "理想化正义与无限膨胀的自我之间的冲突",
+    "primaryMotivation": "掌控、证明、定义正义",
+    "primaryTheme": "权谋者",
+    "emotionalTone": "冷静、锋利、危险",
+    "emotionalTemperature": "high",
+    "psychologicalWound": "对平庸现实的厌倦与对自我能力的高度迷信结合。",
+    "fateArc": "越想控制世界，越被自己的控制欲推向毁灭。",
+    "endingState": "输给对手，也输给自己不断扩大的幻觉。",
+    "surfaceTraits": [
+      "聪明",
+      "优雅",
+      "自信"
+    ],
+    "deepTraits": [
+      "控制欲极强",
+      "自恋性正义",
+      "高欺骗性"
+    ],
+    "dominantEmotions": [
+      "优越",
+      "紧张",
+      "兴奋"
+    ],
+    "suppressedEmotions": [
+      "恐惧",
+      "羞耻"
+    ],
+    "valuesTags": [
+      "秩序",
+      "胜利",
+      "正确性"
+    ],
+    "symbolicImages": [
+      "笔记本",
+      "苹果",
+      "暗室",
+      "钟表"
+    ],
+    "colors": [
+      {
+        "name": "黑",
+        "hex": "#15181D"
+      },
+      {
+        "name": "红",
+        "hex": "#7B2C2C"
+      },
+      {
+        "name": "银灰",
+        "hex": "#8B929C"
+      }
+    ],
+    "elements": [
+      "夜",
+      "火"
+    ],
+    "soundscapeKeywords": [
+      "翻页",
+      "时钟",
+      "低笑"
+    ],
+    "relationshipProfile": {
+      "love": "亲密关系常被工具化。",
+      "authority": "只相信自己能成为最终裁决者。",
+      "friends": "把关系视为棋盘位置。",
+      "enemies": "对手越强，越刺激其控制欲。"
+    },
+    "timeline": [
+      {
+        "title": "得到死亡笔记",
+        "summary": "能力突然打破日常边界。"
+      },
+      {
+        "title": "开始审判",
+        "summary": "把理想正义付诸行动。"
+      },
+      {
+        "title": "与L对决",
+        "summary": "控制欲达到顶点。"
+      },
+      {
+        "title": "崩塌",
+        "summary": "神性幻觉被现实打穿。"
+      }
+    ],
+    "workSlugs": [
+      "death-note"
+    ],
+    "creatorSlugs": [
+      "tsugumi-ohba"
+    ],
+    "songSlugs": [
+      "light-yagami-theme-v1"
+    ],
+    "themeSlugs": [
+      "schemers",
+      "self-divided"
+    ],
+    "similarCharacterSlugs": [
+      "raskolnikov",
+      "michael-corleone"
+    ]
+  }
+]

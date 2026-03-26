@@ -1,9 +1,12 @@
-import { useParams, useNavigate } from 'react-router'
-import { motion, AnimatePresence } from 'motion/react'
-import { ArrowLeft, Heart, Share2, Play, User, Target, AlertCircle, Zap, Music, TrendingUp, ChevronDown, ChevronUp, Palette, Tag, BookOpen, Users as UsersIcon } from 'lucide-react'
+import { AlertCircle, ArrowLeft, BookOpen, ChevronDown, ChevronUp, Heart, Music, Palette, Play, Share2, Tag, Target, TrendingUp, User, Users as UsersIcon, Zap } from 'lucide-react'
+import { AnimatePresence, motion } from 'motion/react'
 import { useMemo, useState } from 'react'
-import { characterCards, getCharacterBySlug, getCreatorBySlug, getSongBySlug, getWorkBySlug, mapCharacterToDetail } from '../data/adapters'
+import { useNavigate, useParams } from 'react-router'
 import { usePlayer } from '../context/PlayerContext'
+import { characterCards, getCharacterBySlug, getCreatorBySlug, getSongBySlug, getWorkBySlug, mapCharacterToDetail } from '../data/adapters'
+
+
+const DEFAULT_HERO_IMAGE = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 1200'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%23141820'/%3E%3Cstop offset='55%25' stop-color='%230c1018'/%3E%3Cstop offset='100%25' stop-color='%23080b12'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='1200' fill='url(%23g)'/%3E%3Ccircle cx='620' cy='220' r='150' fill='rgba(214,179,106,0.08)'/%3E%3Ccircle cx='180' cy='360' r='220' fill='rgba(108,122,137,0.08)'/%3E%3C/svg%3E"
 
 export function CharacterDetail() {
   const { slug } = useParams()

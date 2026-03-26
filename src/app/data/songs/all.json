@@ -1,0 +1,505 @@
+[
+  {
+    "id": "song-lin-daiyu-theme-v1",
+    "slug": "lin-daiyu-theme-v1",
+    "characterSlug": "lin-daiyu",
+    "title": "落花不敢开口",
+    "summary": "真情与自尊无法两全的哀伤",
+    "coverUrl": "/assets/images/songs/lin-daiyu.webp",
+    "audioUrl": "/assets/audio/lin-daiyu-theme-v1.mp3",
+    "songCoreTheme": "真情与自尊无法两全的哀伤",
+    "songStyles": [
+      "国风抒情",
+      "室内乐"
+    ],
+    "tempoBpm": 68,
+    "vocalProfile": "女声，轻、薄、冷、细腻",
+    "emotionalCurve": [
+      "压抑",
+      "柔痛",
+      "崩裂",
+      "余冷"
+    ],
+    "lyricPreview": "风吹落花的时候，她没有把心事说完。"
+  },
+  {
+    "id": "song-meursault-theme",
+    "slug": "song-meursault-theme",
+    "characterSlug": "meursault",
+    "title": "默尔索之歌",
+    "summary": "在刺眼烈日与审判回声中，一首关于荒诞与诚实的冷感独白。",
+    "coverUrl": "/assets/images/songs/meursault.webp",
+    "audioUrl": "/assets/audio/meursault.mp3",
+    "songCoreTheme": "荒诞世界中的诚实与清醒",
+    "songStyles": [
+      "极简氛围",
+      "存在主义独白",
+      "法式冷感"
+    ],
+    "tempoBpm": 72,
+    "vocalProfile": "低沉男声，平静、疏离、几乎不夸张",
+    "emotionalCurve": [
+      "麻木",
+      "眩晕",
+      "被审判",
+      "清醒接受"
+    ],
+    "lyricPreview": "太阳太亮，连影子都无法说谎。",
+    "aiSongPrompt": "写一首《局外人》默尔索主题的中文 AI 歌曲。核心气质：荒诞、疏离、冷静、烈日下的眩晕、对虚伪的拒绝。叙事视角：第一人称独白。音乐风格：极简氛围 + 法式冷感配器 + 低频鼓点。速度 72 BPM。主乐器：极简钢琴、低音提琴、稀薄电子氛围、远处法庭回声。人声：低沉男声，平静克制，情绪不夸张但有压迫感。情绪线：麻木 → 眩晕 → 被审判 → 清醒接受。避免励志感，保持文学性与存在主义气息。"
+  },
+  {
+    "id": "song-dorian-gray-theme",
+    "slug": "song-dorian-gray-theme",
+    "characterSlug": "dorian-gray",
+    "title": "道林·格雷之歌",
+    "summary": "在镜子与画像之间，一首关于青春、欲望与腐败的危险咏叹。",
+    "coverUrl": "/assets/images/songs/dorian-gray.webp",
+    "audioUrl": "/assets/audio/dorian-gray.mp3",
+    "songCoreTheme": "青春幻象与灵魂腐坏",
+    "songStyles": [
+      "哥特流行",
+      "暗黑室内乐",
+      "唯美主义抒情"
+    ],
+    "tempoBpm": 84,
+    "vocalProfile": "中低音男声，华丽、诱惑、带一点阴影感",
+    "emotionalCurve": [
+      "着迷",
+      "沉溺",
+      "惊惧",
+      "崩塌"
+    ],
+    "lyricPreview": "镜子还年轻，画像已经开始腐烂。",
+    "aiSongPrompt": "写一首《道林格雷的画像》道林·格雷主题的中文 AI 歌曲。关键词：唯美主义、青春、欲望、镜像、画像、腐败、自恋。风格：哥特流行 + 暗黑室内乐。速度 84 BPM。主乐器：钢琴、弦乐、低音大提琴、钟声与轻微合唱。人声：中低音男声，华丽、危险、带引诱感。叙事视角：第一人称，自我迷恋中逐渐露出恐惧。情绪线：着迷 → 沉溺 → 惊惧 → 崩塌。要有贵族室内阴影感和文学气息。"
+  },
+  {
+    "id": "song-anna-karenina-theme",
+    "slug": "song-anna-karenina-theme",
+    "characterSlug": "anna-karenina",
+    "title": "雪站上的安娜",
+    "summary": "在雪夜、火车与社交场幻影之间，一首华丽而绝望的爱情悲歌。",
+    "coverUrl": "/assets/images/songs/anna-karenina.webp",
+    "audioUrl": "/assets/audio/anna-karenina-song.mp3",
+    "songCoreTheme": "炽烈爱情与社会毁灭性审判",
+    "songStyles": [
+      "古典电影配乐",
+      "俄式抒情",
+      "悲剧女主主题"
+    ],
+    "tempoBpm": 74,
+    "vocalProfile": "女声，华丽、压抑、情绪张力强",
+    "emotionalCurve": [
+      "心动",
+      "沉沦",
+      "怀疑",
+      "毁灭"
+    ],
+    "lyricPreview": "我穿过所有目光，却没有一条路能回家。",
+    "aiSongPrompt": "写一首《安娜卡列尼娜》安娜主题的中文 AI 歌曲。关键词：俄国贵族、爱情、火车、雪夜、嫉妒、社会审判、悲剧。风格：古典电影配乐 + 俄式抒情。速度 74 BPM。主乐器：钢琴、弦乐群、低音大提琴、少量钟声。人声：高张力女声，华丽而压抑。叙事视角：第一人称。情绪线：心动 → 沉沦 → 怀疑 → 毁灭。必须有悲剧感、文学性和贵族世界的压迫感。"
+  },
+  {
+    "id": "song-sun-wu-kong-theme-v1",
+    "slug": "sun-wu-kong-theme-v1",
+    "characterSlug": "sun-wu-kong",
+    "title": "不拜天命",
+    "summary": "不服天命的自由烈性",
+    "coverUrl": "/assets/images/songs/sun-wu-kong.webp",
+    "audioUrl": "/assets/audio/sun-wu-kong-theme-v1.mp3",
+    "songCoreTheme": "不服天命的自由烈性",
+    "songStyles": [
+      "国风摇滚",
+      "史诗鼓点"
+    ],
+    "tempoBpm": 128,
+    "vocalProfile": "男声，锋利、带少年烈气",
+    "emotionalCurve": [
+      "躁动",
+      "爆发",
+      "受压",
+      "再燃"
+    ],
+    "lyricPreview": "雷云翻滚时，他还要把名字喊得更高。"
+  },
+  {
+    "id": "song-hamlet-theme-v1",
+    "slug": "hamlet-theme-v1",
+    "characterSlug": "hamlet-character",
+    "title": "钟声之后的王",
+    "summary": "真相、迟疑与存在痛苦",
+    "coverUrl": "/assets/images/songs/hamlet.webp",
+    "audioUrl": "/assets/audio/hamlet-theme-v1.mp3",
+    "songCoreTheme": "真相、迟疑与存在痛苦",
+    "songStyles": [
+      "古典暗色",
+      "室内乐"
+    ],
+    "tempoBpm": 62,
+    "vocalProfile": "男声，低沉、克制、带独白感",
+    "emotionalCurve": [
+      "怀疑",
+      "压抑",
+      "撕裂",
+      "毁灭"
+    ],
+    "lyricPreview": "钟声敲过王座，影子却没有答案。"
+  },
+  {
+    "id": "song-raskolnikov-theme-v1",
+    "slug": "raskolnikov-theme-v1",
+    "characterSlug": "raskolnikov",
+    "title": "拉斯柯尔尼科夫",
+    "summary": "思想越界后的灵魂反噬",
+    "coverUrl": "/assets/images/songs/raskolnikov.webp",
+    "audioUrl": "/assets/audio/raskolnikov-theme-v1.mp3",
+    "songCoreTheme": "思想越界后的灵魂反噬",
+    "songStyles": [
+      "暗色氛围",
+      "心理戏剧"
+    ],
+    "tempoBpm": 72,
+    "vocalProfile": "男声，压抑、低沉、紧绷",
+    "emotionalCurve": [
+      "高傲",
+      "越界",
+      "崩塌",
+      "赎罪"
+    ],
+    "lyricPreview": "热病一样的思想在旧城上空发烫。"
+  },
+  {
+    "id": "song-qiao-feng-theme-v1",
+    "slug": "qiao-feng-theme-v1",
+    "characterSlug": "qiao-feng",
+    "title": "北风知我姓",
+    "summary": "身世撕裂中的大义与孤勇",
+    "coverUrl": "/assets/images/songs/qiao-feng.webp",
+    "audioUrl": "/assets/audio/qiao-feng-theme-v1.mp3",
+    "songCoreTheme": "身世撕裂中的大义与孤勇",
+    "songStyles": [
+      "武侠史诗",
+      "苍凉民谣"
+    ],
+    "tempoBpm": 84,
+    "vocalProfile": "男声，厚重、苍凉、开阔",
+    "emotionalCurve": [
+      "豪迈",
+      "崩裂",
+      "孤承",
+      "决绝"
+    ],
+    "lyricPreview": "北风吹过旷野，他把姓名和命运一起举起。"
+  },
+  {
+    "id": "song-cao-cao-theme-v1",
+    "slug": "cao-cao-theme-v1",
+    "characterSlug": "cao-cao",
+    "title": "宁负天下的人",
+    "summary": "乱世建序者的雄心与疑惧",
+    "coverUrl": "/assets/images/songs/cao-cao.webp",
+    "audioUrl": "/assets/audio/cao-cao-theme-v1.mp3",
+    "songCoreTheme": "乱世建序者的雄心与疑惧",
+    "songStyles": [
+      "史诗叙事",
+      "低沉鼓点"
+    ],
+    "tempoBpm": 92,
+    "vocalProfile": "男声，沉稳、压迫感强",
+    "emotionalCurve": [
+      "扩张",
+      "判断",
+      "疑惧",
+      "未竟"
+    ],
+    "lyricPreview": "夜风吹过旌旗，他把成败都压进酒里。"
+  },
+  {
+    "id": "song-zhen-huan-theme-v1",
+    "slug": "zhen-huan-theme-v1",
+    "characterSlug": "zhen-huan",
+    "title": "冷宫灯下的甄嬛",
+    "summary": "被现实训练成清醒者的成长",
+    "coverUrl": "/assets/images/songs/zhen-huan.webp",
+    "audioUrl": "/assets/audio/zhen-huan-theme-v1.mp3",
+    "songCoreTheme": "被现实训练成清醒者的成长",
+    "songStyles": [
+      "古风叙事",
+      "宫廷氛围"
+    ],
+    "tempoBpm": 74,
+    "vocalProfile": "女声，克制、清冷、后劲强",
+    "emotionalCurve": [
+      "天真",
+      "失望",
+      "冷静",
+      "回锋"
+    ],
+    "lyricPreview": "她学会的不是狠，是不再把命交给别人。"
+  },
+  {
+    "id": "song-naruto-theme-v1",
+    "slug": "naruto-theme-v1",
+    "characterSlug": "naruto-uzumaki",
+    "title": "像风一样喊你的名字",
+    "summary": "孤独之后仍想拥抱世界的热血",
+    "coverUrl": "/assets/images/songs/naruto.webp",
+    "audioUrl": "/assets/audio/naruto-theme-v1.mp3",
+    "songCoreTheme": "孤独之后仍想拥抱世界的热血",
+    "songStyles": [
+      "热血摇滚",
+      "少年感"
+    ],
+    "tempoBpm": 132,
+    "vocalProfile": "男声，明亮、少年、带冲劲",
+    "emotionalCurve": [
+      "孤独",
+      "坚持",
+      "燃起",
+      "被承认"
+    ],
+    "lyricPreview": "被所有人忽视过的人，最懂得怎么把别人拉回来。"
+  },
+  {
+    "id": "song-eren-theme-v1",
+    "slug": "eren-theme-v1",
+    "characterSlug": "eren-yeager",
+    "title": "风暴的名字叫“艾伦”",
+    "summary": "自由执念被推到极端后的悲怆",
+    "coverUrl": "/assets/images/songs/eren.webp",
+    "audioUrl": "/assets/audio/eren-theme-v1.mp3",
+    "songCoreTheme": "自由执念被推到极端后的悲怆",
+    "songStyles": [
+      "史诗摇滚",
+      "暗色合唱"
+    ],
+    "tempoBpm": 96,
+    "vocalProfile": "男声，压抑、决绝",
+    "emotionalCurve": [
+      "渴望",
+      "挣扎",
+      "冲撞",
+      "坠落"
+    ],
+    "lyricPreview": "他把自由追到世界尽头，也把自己一起推过去。"
+  },
+  {
+    "id": "song-light-yagami-theme-v1",
+    "slug": "light-yagami-theme-v1",
+    "characterSlug": "light-yagami",
+    "title": "神判未遂",
+    "summary": "把自己等同于正义后的失控",
+    "coverUrl": "/assets/images/songs/light-yagami.webp",
+    "audioUrl": "/assets/audio/light-yagami-theme-v1.mp3",
+    "songCoreTheme": "把自己等同于正义后的失控",
+    "songStyles": [
+      "悬疑电子",
+      "心理张力"
+    ],
+    "tempoBpm": 88,
+    "vocalProfile": "男声，冷静、锋利",
+    "emotionalCurve": [
+      "掌控",
+      "兴奋",
+      "偏执",
+      "崩盘"
+    ],
+    "lyricPreview": "当一个人开始以为自己就是答案，他就已经离坠落不远了。"
+  },
+  {
+    "id": "song-zhuge-liang-theme-v1",
+    "slug": "zhuge-liang-theme-v1",
+    "characterSlug": "zhuge-liang",
+    "title": "未熄之灯",
+    "summary": "以责任燃尽自己的未竟之人",
+    "coverUrl": "/assets/images/songs/zhuge-liang.webp",
+    "audioUrl": "/assets/audio/zhuge-liang-theme-v1.mp3",
+    "songCoreTheme": "以责任燃尽自己的未竟之人",
+    "songStyles": [
+      "叙事氛围"
+    ],
+    "tempoBpm": 88,
+    "vocalProfile": "人声叙事",
+    "emotionalCurve": [
+      "起势",
+      "拉扯",
+      "爆发",
+      "余响"
+    ],
+    "lyricPreview": "以责任燃尽自己的未竟之人"
+  },
+  {
+    "id": "song-wu-ze-tian-theme-v1",
+    "slug": "wu-ze-tian-theme-v1",
+    "characterSlug": "wu-ze-tian",
+    "title": "武则天：金纹下的名字",
+    "summary": "改写规则者的冷焰与代价",
+    "coverUrl": "/assets/images/songs/wu-ze-tian.webp",
+    "audioUrl": "/assets/audio/wu-ze-tian-theme-v1.mp3",
+    "songCoreTheme": "改写规则者的冷焰与代价",
+    "songStyles": [
+      "叙事氛围"
+    ],
+    "tempoBpm": 88,
+    "vocalProfile": "人声叙事",
+    "emotionalCurve": [
+      "起势",
+      "拉扯",
+      "爆发",
+      "余响"
+    ],
+    "lyricPreview": "改写规则者的冷焰与代价"
+  },
+  {
+    "id": "song-jiang-yuyan-theme-v1",
+    "slug": "jiang-yuyan-theme-v1",
+    "characterSlug": "jiang-yuyan",
+    "title": "血色花影·江玉燕",
+    "summary": "被匮乏与羞辱逼向极端的占有者",
+    "coverUrl": "/assets/images/songs/jiang-yuyan.webp",
+    "audioUrl": "/assets/audio/jiang-yuyan-theme-v1.mp3",
+    "songCoreTheme": "被匮乏与羞辱逼向极端的占有者",
+    "songStyles": [
+      "叙事氛围"
+    ],
+    "tempoBpm": 88,
+    "vocalProfile": "人声叙事",
+    "emotionalCurve": [
+      "起势",
+      "拉扯",
+      "爆发",
+      "余响"
+    ],
+    "lyricPreview": "被匮乏与羞辱逼向极端的占有者"
+  },
+  {
+    "id": "song-michael-corleone-theme-v1",
+    "slug": "michael-corleone-theme-v1",
+    "characterSlug": "michael-corleone",
+    "title": "科里昂的暗房",
+    "summary": "以控制代替情感的沉冷继承者",
+    "coverUrl": "/assets/images/songs/michael-corleone.webp",
+    "audioUrl": "/assets/audio/michael-corleone-theme-v1.mp3",
+    "songCoreTheme": "以控制代替情感的沉冷继承者",
+    "songStyles": [
+      "叙事氛围"
+    ],
+    "tempoBpm": 88,
+    "vocalProfile": "人声叙事",
+    "emotionalCurve": [
+      "起势",
+      "拉扯",
+      "爆发",
+      "余响"
+    ],
+    "lyricPreview": "以控制代替情感的沉冷继承者"
+  },
+  {
+    "id": "song-arthur-fleck-theme-v1",
+    "slug": "arthur-fleck-theme-v1",
+    "characterSlug": "arthur-fleck",
+    "title": "看见我之前",
+    "summary": "从无人看见到以失控换取注视",
+    "coverUrl": "/assets/images/songs/arthur-fleck.webp",
+    "audioUrl": "/assets/audio/arthur-fleck-theme-v1.mp3",
+    "songCoreTheme": "从无人看见到以失控换取注视",
+    "songStyles": [
+      "叙事氛围"
+    ],
+    "tempoBpm": 88,
+    "vocalProfile": "人声叙事",
+    "emotionalCurve": [
+      "起势",
+      "拉扯",
+      "爆发",
+      "余响"
+    ],
+    "lyricPreview": "从无人看见到以失控换取注视"
+  },
+  {
+    "id": "song-sasuke-theme-v1",
+    "slug": "sasuke-theme-v1",
+    "characterSlug": "sasuke-uchiha",
+    "title": "雷痕上的姓",
+    "summary": "把软弱压成复仇形状的孤行者",
+    "coverUrl": "/assets/images/songs/sasuke.webp",
+    "audioUrl": "/assets/audio/sasuke-theme-v1.mp3",
+    "songCoreTheme": "把软弱压成复仇形状的孤行者",
+    "songStyles": [
+      "叙事氛围"
+    ],
+    "tempoBpm": 88,
+    "vocalProfile": "人声叙事",
+    "emotionalCurve": [
+      "起势",
+      "拉扯",
+      "爆发",
+      "余响"
+    ],
+    "lyricPreview": "把软弱压成复仇形状的孤行者"
+  },
+  {
+    "id": "song-luffy-theme-v1",
+    "slug": "luffy-theme-v1",
+    "characterSlug": "monkey-d-luffy",
+    "title": "草帽朝前飞",
+    "summary": "把自由当作生命本身的冒险者",
+    "coverUrl": "/assets/images/songs/luffy.webp",
+    "audioUrl": "/assets/audio/luffy-theme-v1.mp3",
+    "songCoreTheme": "把自由当作生命本身的冒险者",
+    "songStyles": [
+      "叙事氛围"
+    ],
+    "tempoBpm": 88,
+    "vocalProfile": "人声叙事",
+    "emotionalCurve": [
+      "起势",
+      "拉扯",
+      "爆发",
+      "余响"
+    ],
+    "lyricPreview": "把自由当作生命本身的冒险者"
+  },
+  {
+    "id": "song-rei-theme-v1",
+    "slug": "rei-theme-v1",
+    "characterSlug": "rei-ayanami",
+    "title": "绫波的白色轮廓",
+    "summary": "从空白中慢慢长出自我意识",
+    "coverUrl": "/assets/images/songs/rei.webp",
+    "audioUrl": "/assets/audio/rei-theme-v1.mp3",
+    "songCoreTheme": "从空白中慢慢长出自我意识",
+    "songStyles": [
+      "叙事氛围"
+    ],
+    "tempoBpm": 88,
+    "vocalProfile": "人声叙事",
+    "emotionalCurve": [
+      "起势",
+      "拉扯",
+      "爆发",
+      "余响"
+    ],
+    "lyricPreview": "从空白中慢慢长出自我意识"
+  },
+  {
+    "id": "song-napoleon-theme-v1",
+    "slug": "napoleon-theme-v1",
+    "characterSlug": "napoleon-bonaparte",
+    "title": "拿破仑",
+    "summary": "把个人意志扩张成历史秩序的征服者",
+    "coverUrl": "/assets/images/songs/napoleon.webp",
+    "audioUrl": "/assets/audio/napoleon-theme-v1.mp3",
+    "songCoreTheme": "把个人意志扩张成历史秩序的征服者",
+    "songStyles": [
+      "叙事氛围"
+    ],
+    "tempoBpm": 88,
+    "vocalProfile": "人声叙事",
+    "emotionalCurve": [
+      "起势",
+      "拉扯",
+      "爆发",
+      "余响"
+    ],
+    "lyricPreview": "把个人意志扩张成历史秩序的征服者"
+  }
+]

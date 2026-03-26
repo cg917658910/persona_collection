@@ -1,0 +1,200 @@
+[
+  {
+    "id": "work-the-stranger-001",
+    "slug": "the-stranger",
+    "title": "局外人",
+    "summary": "关于荒诞、冷漠现实与存在诚实的现代主义小说。",
+    "workTypeCode": "novel",
+    "regionCode": "france",
+    "culturalRegionCode": "french_literature",
+    "eraText": "20世纪法国文学",
+    "releaseYear": 1942,
+    "coverUrl": "/assets/images/works/the-stranger.webp",
+    "creatorSlugs": [
+      "albert-camus"
+    ],
+    "characterSlugs": [
+      "meursault"
+    ]
+  },
+  {
+    "id": "work-dorian-gray-001",
+    "slug": "the-picture-of-dorian-gray",
+    "title": "道林格雷的画像",
+    "summary": "关于唯美主义、自恋欲望与灵魂腐败的哥特小说。",
+    "workTypeCode": "novel",
+    "regionCode": "uk",
+    "culturalRegionCode": "british_literature",
+    "eraText": "维多利亚时代文学",
+    "releaseYear": 1890,
+    "coverUrl": "/assets/images/works/the-picture-of-dorian-gray.webp",
+    "creatorSlugs": [
+      "oscar-wilde"
+    ],
+    "characterSlugs": [
+      "dorian-gray"
+    ]
+  },
+  {
+    "id": "work-unbearable-lightness-001",
+    "slug": "the-unbearable-lightness-of-being",
+    "title": "不能承受的生命之轻",
+    "summary": "把爱情、历史与存在轻重问题交织在一起的哲思小说。",
+    "workTypeCode": "novel",
+    "regionCode": "",
+    "culturalRegionCode": "western_literature",
+    "eraText": "20世纪中欧文学",
+    "releaseYear": 1984,
+    "coverUrl": "/assets/images/works/the-unbearable-lightness-of-being.webp",
+    "creatorSlugs": [
+      "milan-kundera"
+    ],
+    "characterSlugs": [
+      "tereza"
+    ]
+  },
+  {
+    "id": "work-my-date-with-a-vampire-001",
+    "slug": "my-date-with-a-vampire",
+    "title": "我和僵尸有个约会",
+    "summary": "融合都市奇幻、宿命爱情与驱魔设定的香港经典剧集。",
+    "workTypeCode": "tv_series",
+    "regionCode": "hongkong_china",
+    "culturalRegionCode": "hongkong_film_tv",
+    "eraText": "90年代香港剧集",
+    "releaseYear": 1998,
+    "coverUrl": "/assets/images/works/my-date-with-a-vampire.webp",
+    "creatorSlugs": [
+      "chen-shi-san"
+    ],
+    "characterSlugs": [
+      "ma-xiao-ling"
+    ]
+  },
+  {
+    "id": "work-king-of-beggars-001",
+    "slug": "king-of-beggars",
+    "title": "武状元苏乞儿",
+    "summary": "以跌落、逆袭与市井热血为核心的华语古装喜剧电影。",
+    "workTypeCode": "film",
+    "regionCode": "hongkong_china",
+    "culturalRegionCode": "hongkong_film_tv",
+    "eraText": "90年代华语电影",
+    "releaseYear": 1992,
+    "coverUrl": "/assets/images/works/king-of-beggars.webp",
+    "creatorSlugs": [
+      "gordon-chan"
+    ],
+    "characterSlugs": [
+      "su-can"
+    ]
+  },
+  {
+    "id": "work-worst-person-001",
+    "slug": "the-worst-person-in-the-world",
+    "title": "世界上最糟糕的人",
+    "summary": "关于当代都市女性在自由、关系与自我认同间漂移的电影。",
+    "workTypeCode": "film",
+    "regionCode": "",
+    "culturalRegionCode": "western_film_tv",
+    "eraText": "当代北欧电影",
+    "releaseYear": 2021,
+    "coverUrl": "/assets/images/works/the-worst-person-in-the-world.webp",
+    "creatorSlugs": [
+      "joachim-trier"
+    ],
+    "characterSlugs": [
+      "julie"
+    ]
+  },
+  {
+    "id": "work-legend-of-1900-001",
+    "slug": "the-legend-of-1900",
+    "title": "海上钢琴师",
+    "summary": "关于天才、边界、漂流与未登陆人生的抒情电影。",
+    "workTypeCode": "film",
+    "regionCode": "",
+    "culturalRegionCode": "western_film_tv",
+    "eraText": "欧洲电影",
+    "releaseYear": 1998,
+    "coverUrl": "/assets/images/works/the-legend-of-1900.webp",
+    "creatorSlugs": [
+      "giuseppe-tornatore"
+    ],
+    "characterSlugs": [
+      "nineteen-hundred"
+    ]
+  },
+  {
+    "id": "work-la-la-land-001",
+    "slug": "la-la-land",
+    "title": "爱乐之城",
+    "summary": "把梦想、爱情与洛杉矶幻光交织起来的现代歌舞电影。",
+    "workTypeCode": "film",
+    "regionCode": "usa",
+    "culturalRegionCode": "western_film_tv",
+    "eraText": "当代美国电影",
+    "releaseYear": 2016,
+    "coverUrl": "/assets/images/works/la-la-land.webp",
+    "creatorSlugs": [
+      "damien-chazelle"
+    ],
+    "characterSlugs": [
+      "mia-dolan"
+    ]
+  },
+  {
+    "id": "work-anna-karenina-001",
+    "slug": "anna-karenina",
+    "title": "安娜卡列尼娜",
+    "summary": "以激情、婚姻、阶级秩序与女性处境构成核心悲剧的俄国小说。",
+    "workTypeCode": "novel",
+    "regionCode": "russia",
+    "culturalRegionCode": "russian_literature",
+    "eraText": "19世纪俄国文学",
+    "releaseYear": 1878,
+    "coverUrl": "/assets/images/works/anna-karenina.webp",
+    "creatorSlugs": [
+      "leo-tolstoy"
+    ],
+    "characterSlugs": [
+      "anna-karenina"
+    ]
+  },
+  {
+    "id": "work-painted-veil-001",
+    "slug": "the-painted-veil",
+    "title": "面纱",
+    "summary": "关于婚姻裂痕、羞耻、异乡经验与女性成长的英国小说。",
+    "workTypeCode": "novel",
+    "regionCode": "uk",
+    "culturalRegionCode": "british_literature",
+    "eraText": "20世纪英国文学",
+    "releaseYear": 1925,
+    "coverUrl": "/assets/images/works/the-painted-veil.webp",
+    "creatorSlugs": [
+      "william-somerset-maugham"
+    ],
+    "characterSlugs": [
+      "kitty-fane"
+    ]
+  },
+  {
+    "id": "work-one-hundred-years-001",
+    "slug": "one-hundred-years-of-solitude",
+    "title": "百年孤独",
+    "summary": "在马孔多的小镇时间里书写家族命运、历史循环与孤独结构的魔幻现实主义小说。",
+    "workTypeCode": "novel",
+    "regionCode": "",
+    "culturalRegionCode": "western_literature",
+    "eraText": "20世纪拉美文学",
+    "releaseYear": 1967,
+    "coverUrl": "/assets/images/works/one-hundred-years-of-solitude.webp",
+    "creatorSlugs": [
+      "gabriel-garcia-marquez"
+    ],
+    "characterSlugs": [
+      "aureliano-buendia"
+    ]
+  }
+]

@@ -7,6 +7,7 @@ type Track = {
   subtitle?: string
   coverUrl?: string
   audioUrl: string
+  characterSlug?: string
 }
 
 type PlayerDisplayMode = 'hidden' | 'mini' | 'expanded'
@@ -43,11 +44,14 @@ const defaultQueue: Track[] = songs.map((song) => ({
   subtitle: getCharacterBySlug(song.characterSlug)?.name ?? song.characterSlug,
   coverUrl: song.coverUrl,
   audioUrl: song.audioUrl,
+  characterSlug: song.characterSlug,
 }))
 
 export function PlayerProvider({ children }: { children: React.ReactNode }) {
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const indexRef = useRef(-1)
+  const rafRef = useRef<number | null>(null)
+  const intervalRef = useRef<number | null>(null)
   const [queue] = useState<Track[]>(defaultQueue)
   const [index, setIndex] = useState(-1)
   const [currentTrack, setCurrentTrack] = useState<Track | null>(null)
@@ -59,18 +63,79 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
 
+  const stopProgressSync = () => {
+    if (rafRef.current !== null) {
+      window.cancelAnimationFrame(rafRef.current)
+      rafRef.current = null
+    }
+    if (intervalRef.current !== null) {
+      window.clearInterval(intervalRef.current)
+      intervalRef.current = null
+    }
+  }
+
+  const syncFromAudio = () => {
+    const audio = audioRef.current
+    if (!audio) return
+    setCurrentTime(audio.currentTime || 0)
+    setDuration(Number.isFinite(audio.duration) ? audio.duration : 0)
+    setIsPlaying(!audio.paused && !audio.ended)
+  }
+
+  const startProgressSync = () => {
+    stopProgressSync()
+
+    const tick = () => {
+      const audio = audioRef.current
+      if (!audio) return
+
+      if (!document.hidden) {
+        setCurrentTime(audio.currentTime || 0)
+        setDuration(Number.isFinite(audio.duration) ? audio.duration : 0)
+      }
+
+      if (!audio.paused && !audio.ended) {
+        rafRef.current = window.requestAnimationFrame(tick)
+      } else {
+        rafRef.current = null
+      }
+    }
+
+    const audio = audioRef.current
+    if (audio && !audio.paused && !audio.ended) {
+      rafRef.current = window.requestAnimationFrame(tick)
+    }
+
+    intervalRef.current = window.setInterval(() => {
+      const liveAudio = audioRef.current
+      if (!liveAudio) return
+      if (liveAudio.paused || liveAudio.ended || document.hidden) return
+      setCurrentTime(liveAudio.currentTime || 0)
+      setDuration(Number.isFinite(liveAudio.duration) ? liveAudio.duration : 0)
+    }, 1000)
+  }
+
   useEffect(() => {
     const audio = new Audio()
-    audio.preload = 'metadata'
+    audio.preload = 'auto'
+    audio.crossOrigin = 'anonymous'
+    audio.playsInline = true
+    ;(audio as HTMLAudioElement & { webkitPlaysInline?: boolean }).webkitPlaysInline = true
     audioRef.current = audio
 
     const onEnded = () => {
+      stopProgressSync()
       void nextInternal(indexRef.current)
     }
-    const onPause = () => setIsPlaying(false)
+    const onPause = () => {
+      setIsPlaying(false)
+      stopProgressSync()
+    }
     const onPlay = () => {
       setIsPlaying(true)
       setError(null)
+      syncFromAudio()
+      startProgressSync()
     }
     const onTime = () => setCurrentTime(audio.currentTime || 0)
     const onLoaded = () => {
@@ -79,13 +144,36 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
       setError(null)
     }
     const onWaiting = () => setIsReady(false)
-    const onCanPlay = () => setIsReady(true)
+    const onCanPlay = () => {
+      setIsReady(true)
+      syncFromAudio()
+    }
+    const onSeeking = () => setCurrentTime(audio.currentTime || 0)
     const onError = () => {
       const mediaError = audio.error
       const message = mediaError ? `音频加载失败（code: ${mediaError.code}）` : '音频加载失败'
       setError(message)
       setIsPlaying(false)
       setIsReady(false)
+      stopProgressSync()
+    }
+
+    const resumeFromSystem = () => {
+      const liveAudio = audioRef.current
+      if (!liveAudio) return
+      syncFromAudio()
+      if (!liveAudio.paused && !liveAudio.ended) {
+        setIsReady(liveAudio.readyState >= 2)
+        startProgressSync()
+      }
+    }
+
+    const onVisibilityChange = () => {
+      if (document.hidden) {
+        stopProgressSync()
+      } else {
+        resumeFromSystem()
+      }
     }
 
     audio.addEventListener('ended', onEnded)
@@ -95,9 +183,16 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
     audio.addEventListener('loadedmetadata', onLoaded)
     audio.addEventListener('waiting', onWaiting)
     audio.addEventListener('canplay', onCanPlay)
+    audio.addEventListener('seeking', onSeeking)
+    audio.addEventListener('seeked', onSeeking)
     audio.addEventListener('error', onError)
+    document.addEventListener('visibilitychange', onVisibilityChange)
+    window.addEventListener('focus', resumeFromSystem)
+    window.addEventListener('pageshow', resumeFromSystem)
+    document.addEventListener('resume', resumeFromSystem as EventListener)
 
     return () => {
+      stopProgressSync()
       audio.pause()
       audio.src = ''
       audio.removeEventListener('ended', onEnded)
@@ -107,7 +202,13 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
       audio.removeEventListener('loadedmetadata', onLoaded)
       audio.removeEventListener('waiting', onWaiting)
       audio.removeEventListener('canplay', onCanPlay)
+      audio.removeEventListener('seeking', onSeeking)
+      audio.removeEventListener('seeked', onSeeking)
       audio.removeEventListener('error', onError)
+      document.removeEventListener('visibilitychange', onVisibilityChange)
+      window.removeEventListener('focus', resumeFromSystem)
+      window.removeEventListener('pageshow', resumeFromSystem)
+      document.removeEventListener('resume', resumeFromSystem as EventListener)
     }
   }, [])
 
@@ -126,6 +227,7 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
     setIndex(nextIndex)
     setCurrentTrack(track)
     setDisplayMode('mini')
+    stopProgressSync()
     audio.pause()
     audio.src = track.audioUrl
     audio.load()
@@ -159,6 +261,7 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
   const playTrack = async (track: Track) => {
     const foundIndex = queue.findIndex((item) => item.audioUrl === track.audioUrl)
     const nextIndex = foundIndex >= 0 ? foundIndex : 0
+    const resolvedTrack = foundIndex >= 0 ? { ...queue[nextIndex], ...track } : track
 
     if (currentTrack?.audioUrl === track.audioUrl && audioRef.current) {
       setDisplayMode('mini')
@@ -168,11 +271,14 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
         } catch (err) {
           setError(err instanceof Error ? err.message : '播放失败')
         }
+      } else {
+        syncFromAudio()
+        startProgressSync()
       }
       return
     }
 
-    await setTrackSource(track, nextIndex)
+    await setTrackSource(resolvedTrack, nextIndex)
   }
 
   const toggle = async () => {
@@ -194,6 +300,7 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
     if (!audio) return
     audio.pause()
     audio.currentTime = 0
+    stopProgressSync()
     setCurrentTime(0)
     setIsPlaying(false)
     setDisplayMode('mini')
@@ -206,6 +313,7 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
       audio.currentTime = 0
       audio.src = ''
     }
+    stopProgressSync()
     setCurrentTrack(null)
     setIndex(-1)
     setCurrentTime(0)
