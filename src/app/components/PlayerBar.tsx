@@ -2,6 +2,7 @@ import { ImageWithFallback } from './figma/ImageWithFallback'
 import { AlertCircle, ChevronDown, ChevronUp, ListMusic, LoaderCircle, Pause, Play, SkipBack, SkipForward, Square, X } from 'lucide-react'
 import { AnimatePresence, motion } from 'motion/react'
 import { usePlayer } from '../context/PlayerContext'
+import { useNavigate } from 'react-router'
 
 function formatTime(v: number) {
   if (!Number.isFinite(v)) return '0:00'
@@ -26,6 +27,7 @@ function Visualizer({ active }: { active: boolean }) {
 }
 
 export function PlayerBar() {
+  const navigate = useNavigate()
   const {
     currentTrack,
     currentIndex,
@@ -51,6 +53,13 @@ export function PlayerBar() {
   } = usePlayer()
 
   if (!currentTrack || displayMode === 'hidden') return null
+
+  const canOpenCharacter = Boolean(currentTrack.characterSlug)
+  const openCharacter = (event?: React.MouseEvent | React.KeyboardEvent) => {
+    event?.stopPropagation()
+    if (!currentTrack.characterSlug) return
+    navigate(`/character/${currentTrack.characterSlug}`)
+  }
 
   return (
     <div className="pointer-events-none absolute bottom-16 left-0 right-0 z-30 px-4 pb-2">
@@ -79,7 +88,19 @@ export function PlayerBar() {
 
               <div className="px-4 pb-4">
                 <div className="mb-4 flex items-center gap-3">
-                  {currentTrack.coverUrl ? <ImageWithFallback src={currentTrack.coverUrl} alt={currentTrack.title} className="h-14 w-14 rounded-2xl object-cover" /> : <div className="h-14 w-14 rounded-2xl bg-white/5" />}
+                  {canOpenCharacter ? (
+                    <button
+                      onClick={openCharacter}
+                      className="shrink-0 overflow-hidden rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#D6B36A]/70"
+                      aria-label={`进入${currentTrack.subtitle || '人物'}详情`}
+                    >
+                      {currentTrack.coverUrl ? <ImageWithFallback src={currentTrack.coverUrl} alt={currentTrack.title} className="h-14 w-14 rounded-2xl object-cover transition hover:scale-[1.02]" /> : <div className="h-14 w-14 rounded-2xl bg-white/5" />}
+                    </button>
+                  ) : currentTrack.coverUrl ? (
+                    <ImageWithFallback src={currentTrack.coverUrl} alt={currentTrack.title} className="h-14 w-14 rounded-2xl object-cover" />
+                  ) : (
+                    <div className="h-14 w-14 rounded-2xl bg-white/5" />
+                  )}
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center gap-2">
                       <div className="truncate text-base text-white">{currentTrack.title}</div>
@@ -167,8 +188,20 @@ export function PlayerBar() {
             }}
             className="block w-full text-left"
           >
-            <div className="flex items-center gap-3 px-3 py-3">
-              {currentTrack.coverUrl ? <ImageWithFallback src={currentTrack.coverUrl} alt={currentTrack.title} className="h-10 w-10 rounded-xl object-cover" /> : <div className="h-10 w-10 rounded-xl bg-white/5" />}
+            <div className="relative flex items-center gap-3 px-3 py-3 pb-4">
+              {canOpenCharacter ? (
+                <button
+                  onClick={openCharacter}
+                  className="shrink-0 overflow-hidden rounded-xl focus:outline-none focus:ring-2 focus:ring-[#D6B36A]/70"
+                  aria-label={`进入${currentTrack.subtitle || '人物'}详情`}
+                >
+                  {currentTrack.coverUrl ? <ImageWithFallback src={currentTrack.coverUrl} alt={currentTrack.title} className="h-10 w-10 rounded-xl object-cover transition hover:scale-[1.02]" /> : <div className="h-10 w-10 rounded-xl bg-white/5" />}
+                </button>
+              ) : currentTrack.coverUrl ? (
+                <ImageWithFallback src={currentTrack.coverUrl} alt={currentTrack.title} className="h-10 w-10 rounded-xl object-cover" />
+              ) : (
+                <div className="h-10 w-10 rounded-xl bg-white/5" />
+              )}
               <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2">
                   <div className="truncate text-sm text-white">{currentTrack.title}</div>
@@ -196,9 +229,17 @@ export function PlayerBar() {
                   <X size={15} />
                 </button>
               </div>
+              <div className="absolute bottom-0 left-0 right-0">
+                <div className="h-[3px] w-full overflow-hidden bg-white/10">
+                  <div
+                    className="h-full rounded-r-full bg-[#D6B36A] transition-all"
+                    style={{ width: `${Math.max(progress * 100, currentTime > 0 ? 1 : 0)}%` }}
+                  />
+                </div>
+              </div>
             </div>
-            <div className="h-[2px] w-full bg-white/5">
-              <div className="h-full bg-[#D6B36A] transition-all" style={{ width: `${Math.max(progress * 100, 0)}%` }} />
+            <div className="sr-only" aria-hidden="true">
+              {formatTime(currentTime)} / {formatTime(duration)}
             </div>
           </div>
         </motion.div>

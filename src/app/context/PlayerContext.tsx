@@ -1,6 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react'
-import { getCharacterBySlug } from '../data/adapters'
-import { songs } from '../data/songs'
+import { usePlayerQueue } from '../services/catalog'
 
 type Track = {
   title: string
@@ -39,20 +38,13 @@ type PlayerContextValue = {
 
 const PlayerContext = createContext<PlayerContextValue | null>(null)
 
-const defaultQueue: Track[] = songs.map((song) => ({
-  title: song.title,
-  subtitle: getCharacterBySlug(song.characterSlug)?.name ?? song.characterSlug,
-  coverUrl: song.coverUrl,
-  audioUrl: song.audioUrl,
-  characterSlug: song.characterSlug,
-}))
-
 export function PlayerProvider({ children }: { children: React.ReactNode }) {
+  const remoteQueue = usePlayerQueue()
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const indexRef = useRef(-1)
   const rafRef = useRef<number | null>(null)
   const intervalRef = useRef<number | null>(null)
-  const [queue] = useState<Track[]>(defaultQueue)
+  const [queue, setQueue] = useState<Track[]>(remoteQueue)
   const [index, setIndex] = useState(-1)
   const [currentTrack, setCurrentTrack] = useState<Track | null>(null)
   const [isPlaying, setIsPlaying] = useState(false)
@@ -215,6 +207,12 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     indexRef.current = index
   }, [index])
+
+  useEffect(() => {
+    if (remoteQueue.length > 0) {
+      setQueue(remoteQueue)
+    }
+  }, [remoteQueue])
 
   const setTrackSource = async (track: Track, nextIndex: number) => {
     const audio = audioRef.current

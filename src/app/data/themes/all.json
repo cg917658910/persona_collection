@@ -15,7 +15,14 @@
       "zhen-huan",
       "jiang-yuyan",
       "arthur-fleck",
-      "eren-yeager"
+      "eren-yeager",
+      "anna-karenina",
+      "dorian-gray",
+      "meursault",
+      "tereza",
+      "nineteen-hundred",
+      "aureliano-buendia",
+      "mia-dolan"
     ]
   },
   {
@@ -46,7 +53,11 @@
       "zhen-huan",
       "arthur-fleck",
       "sasuke-uchiha",
-      "light-yagami"
+      "light-yagami",
+      "dorian-gray",
+      "julie",
+      "ma-xiao-ling",
+      "tereza"
     ]
   },
   {
@@ -60,7 +71,10 @@
     "characterSlugs": [
       "sun-wu-kong",
       "qiao-feng",
-      "zhuge-liang"
+      "zhuge-liang",
+      "ma-xiao-ling",
+      "su-can",
+      "kitty-fane"
     ]
   },
   {
@@ -121,7 +135,8 @@
     "category": "emotion",
     "coverUrl": "/assets/images/themes/lonely.svg",
     "characterSlugs": [
-      "rei-ayanami"
+      "rei-ayanami",
+       "aureliano-buendia"
     ]
   },
   {
@@ -134,7 +149,8 @@
     "coverUrl": "/assets/images/themes/fate-bound.svg",
     "characterSlugs": [
       "cao-cao",
-      "eren-yeager"
+      "eren-yeager",
+      "aureliano-buendia"
     ]
   },
   {
@@ -146,7 +162,11 @@
     "category": "fate",
     "coverUrl": "/assets/images/themes/growth-arc.svg",
     "characterSlugs": [
-      "naruto-uzumaki"
+      "naruto-uzumaki",
+      "tereza",
+      "julie",
+      "kitty-fane",
+      "mia-dolan"
     ]
   }
 ]

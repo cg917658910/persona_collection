@@ -2,7 +2,6 @@ import { ImageWithFallback } from './figma/ImageWithFallback'
 import { useNavigate } from "react-router";
 import { Music, Play } from "lucide-react";
 import type { CharacterListItem } from "../data/types";
-import { featuredSongs } from "../data/adapters";
 import { usePlayer } from "../context/PlayerContext";
 
 interface CharacterCardProps {
@@ -11,8 +10,9 @@ interface CharacterCardProps {
 
 export function CharacterCard({ character }: CharacterCardProps) {
   const navigate = useNavigate();
-  const { playTrack } = usePlayer();
-  const song = featuredSongs.find((item) => item.characterName === character.name);
+  const { playTrack, queue } = usePlayer();
+  const song = queue.find((item) => item.characterSlug === character.slug);
+  const themeSongTitle = character.themeSong || song?.title || (character.hasSong ? '人物之歌' : '');
 
   return (
     <div
@@ -42,7 +42,18 @@ export function CharacterCard({ character }: CharacterCardProps) {
               <button
                 className="px-2 py-0.5 rounded-full text-[10px] inline-flex items-center gap-1"
                 style={{ background: 'rgba(214, 179, 106, 0.12)', color: '#D6B36A' }}
-                onClick={(e) => { e.stopPropagation(); if (song) playTrack({ title: song.title, subtitle: song.characterName, coverUrl: song.coverUrl, audioUrl: song.audioUrl }); }}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (song) {
+                    void playTrack({
+                      title: song.title,
+                      subtitle: song.subtitle ?? character.name,
+                      coverUrl: song.coverUrl,
+                      audioUrl: song.audioUrl,
+                      characterSlug: song.characterSlug,
+                    });
+                  }
+                }}
               >
                 <Play size={10} /> 人物之歌
               </button>
@@ -76,7 +87,7 @@ export function CharacterCard({ character }: CharacterCardProps) {
       >
         <Music size={14} style={{ color: '#6C7A89' }} />
         <span className="text-xs truncate" style={{ color: '#6C7A89' }}>
-          {character.themeSong}
+          {themeSongTitle}
         </span>
       </div>
     </div>
