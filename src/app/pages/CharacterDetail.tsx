@@ -20,6 +20,7 @@ import { AnimatePresence, motion } from 'motion/react'
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams } from 'react-router'
 import { CharacterCard } from '../components/CharacterCard'
+import { RelationshipPreviewCard } from '../components/RelationshipPreviewCard'
 import { ImageWithFallback } from '../components/figma/ImageWithFallback'
 import { usePlayer } from '../context/PlayerContext'
 import { buildCharacterShareUrl } from '../services/api'
@@ -439,6 +440,20 @@ export function CharacterDetail() {
                     {item.value}
                   </p>
                 </div>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
+        {character.keyRelationships?.length > 0 ? (
+          <section className="mb-8">
+            <div className="mb-4 flex items-center gap-2">
+              <UsersIcon size={18} style={{ color: '#D6B36A' }} />
+              <h2 style={{ color: '#FFFFFF' }}>关键关系</h2>
+            </div>
+            <div className="space-y-3">
+              {character.keyRelationships.map((item) => (
+                <RelationshipPreviewCard key={item.id} relationship={item} />
               ))}
             </div>
           </section>

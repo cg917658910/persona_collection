@@ -6,6 +6,7 @@ import { Creators } from './pages/Creators'
 import { Discover } from './pages/Discover'
 import { Home } from './pages/Home'
 import { Profile } from './pages/Profile'
+import { RelationshipDetail } from './pages/RelationshipDetail'
 import { Search } from './pages/Search'
 import { ThemeDetail } from './pages/ThemeDetail'
 import { Themes } from './pages/Themes'
@@ -28,6 +29,7 @@ const routes = [
       { path: 'themes', Component: Themes },
       { path: 'theme/:slug', Component: ThemeDetail },
       { path: 'character/:slug', Component: CharacterDetail },
+      { path: 'relationship/:slug', Component: RelationshipDetail },
     ],
   },
 ]

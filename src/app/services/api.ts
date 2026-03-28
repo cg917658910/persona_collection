@@ -36,6 +36,11 @@ export function buildCharacterShareUrl(slug: string) {
   return `${SHARE_BASE}/share/character/${normalizedSlug}`
 }
 
+export function buildRelationShareUrl(slug: string) {
+  const normalizedSlug = slug.replace(/^\/+|\/+$/g, '')
+  return `${SHARE_BASE}/share/relation/${normalizedSlug}`
+}
+
 export async function fetchApi<T>(path: string, init?: RequestInit): Promise<T> {
   const response = await fetch(buildUrl(path), {
     ...init,

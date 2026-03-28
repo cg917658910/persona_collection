@@ -69,8 +69,9 @@ export interface PMCharacter {
   summary: string;
   coverUrl: string;
   oneLineDefinition: string;
-  coreIdentity: string;
-  coreFear: string;
+    coreIdentity: string;
+    motivationNote?: string;
+    coreFear: string;
   coreConflict: string;
   primaryMotivation: string;
   primaryTheme: string;
@@ -138,14 +139,15 @@ export interface CreatorCardItem {
 }
 
 export interface ThemeCardItem {
-  id: string;
-  slug: string;
-  name: string;
-  description: string;
-  imageUrl: string;
-  meta: string;
-  characterCount: number;
-}
+    id: string;
+    slug: string;
+    name: string;
+    description: string;
+    imageUrl: string;
+    meta: string;
+    characterCount: number;
+    subjectType?: 'character' | 'relation';
+  }
 
 export interface CharacterDetailView {
   id: string;

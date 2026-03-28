@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
+import { adaptRelationDetail, type RelationDetailApiResponse, type RelationshipDetailData } from '../adapters/relation-detail'
 import {
   characterCards,
   creatorCards,
@@ -93,6 +94,8 @@ type ThemeListApiItem = {
   coverUrl: string
   summary: string
   category?: string
+  subjectType?: 'character' | 'relation'
+  itemCount?: number
   characterCount: number
 }
 
@@ -147,6 +150,30 @@ type CharacterRelationshipPattern = {
   value: string
 }
 
+export type RelationshipCharacterRef = {
+  slug: string
+  name: string
+  coverUrl: string
+  summary?: string
+}
+
+export type RelationshipListItem = {
+  id: string
+  slug: string
+  name: string
+  summary: string
+  oneLineDefinition: string
+  coverUrl: string
+  relationType: string
+  relationLabel: string
+  workTitle?: string
+  intensity: number
+  tags: string[]
+  sourceCharacter: RelationshipCharacterRef
+  targetCharacter: RelationshipCharacterRef
+  counterpart?: RelationshipCharacterRef | null
+}
+
 export function humanizeCharacterTypeLabel(type: string) {
   return humanizeCharacterType(type)
 }
@@ -194,6 +221,7 @@ export type CharacterDetailData = {
   symbolicImages: string[]
   elements: string[]
   soundscapeKeywords: string[]
+  keyRelationships: RelationshipListItem[]
   similarCharacters: CharacterListApiItem[]
 }
 
@@ -227,7 +255,9 @@ export type ThemeDetailData = {
   coverUrl: string
   summary: string
   category?: string
+  subjectType?: 'character' | 'relation'
   characters: CharacterListApiItem[]
+  relationships: RelationshipListItem[]
 }
 
 export type DiscoverGroup = {
@@ -286,20 +316,23 @@ export function toCreatorCardItem(item: CreatorListApiItem): CreatorCardItem {
     name: item.name,
     description: item.summary,
     imageUrl: item.coverUrl,
-    meta: [humanizeCreatorType(item.creatorTypeCode || ''), item.eraText || ''].filter(Boolean).join(' · '),
+    meta: [humanizeCreatorType(item.creatorTypeCode || ''), item.eraText || ''].filter(Boolean).join(' 路 '),
     workCount: item.workCount,
   }
 }
 
 export function toThemeCardItem(item: ThemeListApiItem): ThemeCardItem {
+  const subjectType = item.subjectType === 'relation' ? 'relation' : 'character'
+  const itemCount = Number(item.itemCount || item.characterCount || 0)
   return {
     id: item.id,
     slug: item.slug,
     name: item.name,
     description: item.summary,
     imageUrl: item.coverUrl,
-    meta: `${humanizeThemeCategory(item.category || '')} · ${item.characterCount} 位人物`,
-    characterCount: item.characterCount,
+    meta: `${humanizeThemeCategory(item.category || '')} · ${itemCount}${subjectType === 'relation' ? '组关系' : '位人物'}`,
+    characterCount: itemCount,
+    subjectType,
   }
 }
 
@@ -329,6 +362,60 @@ function buildRelationshipPatterns(profile: Record<string, string | undefined>):
   return Object.entries(profile)
     .map(([title, value]) => ({ title, value: value?.trim() ?? '' }))
     .filter((item) => item.value)
+}
+
+function buildFallbackRelationshipItemsForCharacter(slug: string): RelationshipListItem[] {
+  const character = getCharacterBySlug(slug)
+  if (!character) return []
+
+  return character.similarCharacterSlugs
+    .map((otherSlug) => {
+      const other = getCharacterBySlug(otherSlug)
+      if (!other) return null
+
+      const work = getWorkBySlug(character.workSlugs[0] || other.workSlugs[0] || '')
+      const themeNames = [character.primaryTheme, other.primaryTheme]
+        .map((themeSlugOrName) => getThemeBySlug(themeSlugOrName)?.name ?? themeSlugOrName)
+        .filter(Boolean)
+
+      return {
+        id: `${character.slug}--${other.slug}`,
+        slug: `${character.slug}--${other.slug}`,
+        name: `${character.name} × ${other.name}`,
+        summary: `${character.name} 与 ${other.name} 在气质和命运上形成互相照亮的对照。`,
+        oneLineDefinition: `${character.name} 的内在张力，在 ${other.name} 身上看见了另一种回应方式。`,
+        coverUrl: character.coverUrl || other.coverUrl,
+        relationType: 'mirror',
+        relationLabel: '镜像',
+        workTitle: work?.title ?? '',
+        intensity: 0.6,
+        tags: ['镜像', ...themeNames].filter(Boolean).slice(0, 3),
+        sourceCharacter: {
+          slug: character.slug,
+          name: character.name,
+          coverUrl: character.coverUrl,
+          summary: character.summary,
+        },
+        targetCharacter: {
+          slug: other.slug,
+          name: other.name,
+          coverUrl: other.coverUrl,
+          summary: other.summary,
+        },
+        counterpart: {
+          slug: other.slug,
+          name: other.name,
+          coverUrl: other.coverUrl,
+          summary: other.summary,
+        },
+      } satisfies RelationshipListItem
+    })
+    .filter((item): item is RelationshipListItem => Boolean(item))
+    .slice(0, 4)
+}
+
+function buildFallbackRelationshipDetail(slug: string): RelationshipDetailData | null {
+  return buildFallbackRelationDetailV2(slug)
 }
 
 function fallbackPlayerQueue(): PlayerQueueTrack[] {
@@ -388,7 +475,7 @@ function buildFallbackCharacterDetail(slug: string): CharacterDetailData | null 
     coreIdentity: rawCharacter.coreIdentity,
     publicImage: '',
     hiddenSelf: '',
-    primaryMotivation: rawCharacter.primaryMotivation,
+      primaryMotivation: rawCharacter.motivationNote || rawCharacter.primaryMotivation,
     coreFear: rawCharacter.coreFear,
     psychologicalWound: rawCharacter.psychologicalWound,
     coreConflict: rawCharacter.coreConflict,
@@ -410,6 +497,7 @@ function buildFallbackCharacterDetail(slug: string): CharacterDetailData | null 
     symbolicImages: rawCharacter.symbolicImages,
     elements: rawCharacter.elements,
     soundscapeKeywords: rawCharacter.soundscapeKeywords,
+    keyRelationships: buildFallbackRelationshipItemsForCharacter(rawCharacter.slug),
     similarCharacters: rawCharacter.similarCharacterSlugs
       .map((item) => getCharacterBySlug(item))
       .filter(Boolean)
@@ -496,6 +584,7 @@ function buildFallbackThemeDetail(slug: string): ThemeDetailData | null {
     coverUrl: theme.coverUrl,
     summary: theme.summary,
     category: theme.category,
+    subjectType: 'character',
     characters: getCharactersByThemeSlug(slug).map((item) => ({
       id: item.id,
       slug: item.slug,
@@ -509,6 +598,7 @@ function buildFallbackThemeDetail(slug: string): ThemeDetailData | null {
       hasSong: item.songSlugs.length > 0,
       themeSongTitle: resolveThemeSongTitle(item.songSlugs[0]),
     })),
+    relationships: [],
   }
 }
 
@@ -663,6 +753,19 @@ export function useCharacterDetailData(slug?: string) {
   )
 }
 
+export function useRelationshipDetailData(slug?: string) {
+  return useAsyncState(
+    null,
+    async () => {
+      if (!slug) return null
+      const data = await fetchApi<RelationDetailApiResponse>(`/relations/${slug}`)
+      return adaptRelationDetail(data)
+    },
+    () => (slug ? buildFallbackRelationDetailV2(slug) : null),
+    [slug],
+  )
+}
+
 export function useWorkDetailData(slug?: string) {
   return useAsyncState(
     null,
@@ -773,3 +876,6 @@ export const catalogFallback = {
   themeCards,
   featuredSongs,
 }
+
+
+
