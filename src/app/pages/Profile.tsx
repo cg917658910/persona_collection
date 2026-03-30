@@ -1,13 +1,12 @@
 import { ChevronRight, Clock, Heart, Music2, PencilLine } from 'lucide-react'
 import { motion } from 'motion/react'
 import { useNavigate } from 'react-router'
-import { useHomeData } from '../services/home'
+import { EMPTY_HOME_DATA, useHomeData } from '../services/home'
 
 export function Profile() {
   const navigate = useNavigate()
-  const {
-    data: { categoryCounts },
-  } = useHomeData()
+  const { data } = useHomeData()
+  const categoryCounts = (data ?? EMPTY_HOME_DATA).categoryCounts
 
   const stats = [
     { label: '已收录人物', value: String(categoryCounts.characters), icon: Clock },

@@ -2,11 +2,11 @@
   ChevronDown,
   Eye,
   Flame,
-  type LucideIcon,
   Music,
   Palette,
   Play,
   Sparkles,
+  type LucideIcon,
 } from 'lucide-react'
 import { motion } from 'motion/react'
 import { useEffect, useState, type ReactNode } from 'react'
@@ -16,24 +16,35 @@ import { usePlayer } from '../context/PlayerContext'
 import { buildRelationShareUrl } from '../services/api'
 import { useRelationshipDetailData } from '../services/catalog'
 
-function SectionTitle({ title, icon: Icon }: { title: string; icon?: LucideIcon }) {
+function SectionTitle({
+  title,
+  icon: Icon,
+  action,
+}: {
+  title: string
+  icon?: LucideIcon
+  action?: ReactNode
+}) {
   return (
-    <div className="mb-6 flex items-center gap-3">
-      {Icon ? (
-        <span
-          className="flex h-9 w-9 items-center justify-center rounded-full"
-          style={{
-            backgroundColor: 'rgba(198, 168, 106, 0.12)',
-            color: '#C6A86A',
-            border: '1px solid rgba(198, 168, 106, 0.2)',
-          }}
-        >
-          <Icon className="h-4 w-4" />
-        </span>
-      ) : null}
-      <h2 className="text-2xl" style={{ color: '#F5F3EE', letterSpacing: '0.02em' }}>
-        {title}
-      </h2>
+    <div className="mb-6 flex items-center justify-between gap-4">
+      <div className="flex min-w-0 items-center gap-3">
+        {Icon ? (
+          <span
+            className="flex h-9 w-9 items-center justify-center rounded-full"
+            style={{
+              backgroundColor: 'rgba(198, 168, 106, 0.12)',
+              color: '#C6A86A',
+              border: '1px solid rgba(198, 168, 106, 0.2)',
+            }}
+          >
+            <Icon className="h-4 w-4" />
+          </span>
+        ) : null}
+        <h2 className="text-2xl" style={{ color: '#F5F3EE', letterSpacing: '0.02em' }}>
+          {title}
+        </h2>
+      </div>
+      {action ? <div className="shrink-0">{action}</div> : null}
     </div>
   )
 }
@@ -135,7 +146,7 @@ function CharacterBadge({
 export function RelationshipDetail() {
   const { slug } = useParams()
   const navigate = useNavigate()
-  const { playTrack } = usePlayer()
+  const { currentTrack, isPlaying, playTrack, toggle } = usePlayer()
   const { data: relationship, loading } = useRelationshipDetailData(slug)
   const [lyricsExpanded, setLyricsExpanded] = useState(false)
 
@@ -174,6 +185,21 @@ export function RelationshipDetail() {
       audioUrl: relationship.primarySong.audioUrl,
     })
   }
+  const isRelationSongActive =
+    Boolean(relationship.primarySong?.audioUrl) &&
+    currentTrack?.audioUrl === relationship.primarySong.audioUrl
+  const isRelationSongPlaying = isRelationSongActive && isPlaying
+
+  const handleRelationSongAction = () => {
+    if (!canPlaySong) {
+      return
+    }
+    if (isRelationSongActive) {
+      void toggle()
+      return
+    }
+    playSong()
+  }
 
   const lyricPreview = relationship.primarySong?.lyric
     ? relationship.primarySong.lyric
@@ -189,7 +215,7 @@ export function RelationshipDetail() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#0F1115' }}>
       <motion.div
-        className="relative isolate min-h-[100svh] overflow-hidden"
+        className="relative isolate h-[89svh] min-h-[38rem] max-h-[54rem] overflow-hidden sm:h-[88svh] md:min-h-[44rem] md:max-h-[60rem]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -206,6 +232,7 @@ export function RelationshipDetail() {
             fallbackLabel={relationship.heroTitle}
             className="h-full w-full object-cover"
             loading="eager"
+            style={{ objectPosition: 'center 22%' }}
           />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(198,168,106,0.1),transparent_35%)]" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/5 to-[#0F1115]" />
@@ -214,13 +241,13 @@ export function RelationshipDetail() {
         </motion.div>
 
         <motion.div
-          className="relative z-10 flex min-h-[100svh] items-end px-5 pb-8 pt-24"
+          className="absolute inset-x-0 bottom-0 z-10 px-5 pb-0 sm:pb-4"
           initial={{ y: 36, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.25, duration: 0.8 }}
-          >
-            <div className="w-full max-w-[31rem]">
-              <div className="max-w-[24rem]">
+          transition={{ delay: 0.25, duration: 0.8 }}
+        >
+            <div className="flex w-full max-w-[33rem] flex-col justify-end">
+              <div className="max-w-[25rem] pb-0">
                 <div className="space-y-2.5">
                   <CharacterBadge
                     name={relationship.sourceCharacter.name}
@@ -266,19 +293,23 @@ export function RelationshipDetail() {
                     ))}
                   </div>
                 ) : null}
-
-                {relationship.heroTension ? (
-                  <p
-                    className="mt-3 max-w-[24rem] text-[0.98rem] leading-8 sm:text-[1.02rem]"
-                    style={{
-                      color: 'rgba(233, 227, 217, 0.84)',
-                      textShadow: '0 8px 20px rgba(0, 0, 0, 0.24)',
-                    }}
-                  >
-                    {relationship.heroTension}
-                  </p>
-                ) : null}
               </div>
+
+              {relationship.heroTension ? (
+                <p
+                  className="max-w-[25rem] text-[0.95rem] leading-7 sm:text-[1rem] sm:leading-8"
+                  style={{
+                    color: 'rgba(233, 227, 217, 0.84)',
+                    textShadow: '0 8px 20px rgba(0, 0, 0, 0.24)',
+                    display: '-webkit-box',
+                    WebkitBoxOrient: 'vertical',
+                    WebkitLineClamp: 2,
+                    overflow: 'hidden',
+                  }}
+                >
+                  {relationship.heroTension}
+                </p>
+              ) : null}
             </div>
           </motion.div>
       </motion.div>
@@ -293,7 +324,48 @@ export function RelationshipDetail() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             >
-              <SectionTitle title="核心理解" icon={Flame} />
+              <SectionTitle
+                title="核心理解"
+                icon={Flame}
+                action={
+                  canPlaySong ? (
+                    <button
+                      type="button"
+                      onClick={handleRelationSongAction}
+                      className="inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm transition-all hover:scale-[1.02]"
+                      style={{
+                        backgroundColor: isRelationSongPlaying
+                          ? 'rgba(198, 168, 106, 0.18)'
+                          : 'rgba(255, 255, 255, 0.04)',
+                        color: isRelationSongPlaying ? '#E6C98A' : 'rgba(245, 243, 238, 0.84)',
+                        border: isRelationSongPlaying
+                          ? '1px solid rgba(198, 168, 106, 0.28)'
+                          : '1px solid rgba(255, 255, 255, 0.1)',
+                        boxShadow: isRelationSongPlaying
+                          ? '0 8px 24px rgba(198, 168, 106, 0.14)'
+                          : 'none',
+                      }}
+                    >
+                      <Play
+                        className="h-3.5 w-3.5"
+                        fill={isRelationSongPlaying ? '#E6C98A' : 'transparent'}
+                      />
+                      <span>关系之歌</span>
+                      <span
+                        className="rounded-full px-2 py-0.5 text-[11px]"
+                        style={{
+                          backgroundColor: isRelationSongPlaying
+                            ? 'rgba(198, 168, 106, 0.16)'
+                            : 'rgba(255, 255, 255, 0.06)',
+                          color: isRelationSongPlaying ? '#E6C98A' : 'rgba(184, 180, 174, 0.82)',
+                        }}
+                      >
+                        {isRelationSongPlaying ? '播放中' : '未播放'}
+                      </span>
+                    </button>
+                  ) : null
+                }
+              />
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               {relationship.coreDynamicCards.map((item, index) => (
                 <GlassCard
